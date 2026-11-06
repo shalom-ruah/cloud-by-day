@@ -1,0 +1,3231 @@
+{
+  "title": "Cloud by Day — Cloud Engineering Revision Question Bank",
+  "version": "1.0",
+  "language": "en",
+  "source": "Cloud_Engineering_Merged_Modules.pdf supplied by the user",
+  "question_count": 144,
+  "section_count": 8,
+  "sections": [
+    {
+      "id": "M1-W1",
+      "title": "M1 Week 1 — Cloud Computing Fundamentals",
+      "question_count": 18
+    },
+    {
+      "id": "M1-W2",
+      "title": "M1 Week 2 — Linux Fundamentals",
+      "question_count": 18
+    },
+    {
+      "id": "M1-W3",
+      "title": "M1 Week 3 — Git and Version Control",
+      "question_count": 18
+    },
+    {
+      "id": "M1-W4",
+      "title": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "question_count": 18
+    },
+    {
+      "id": "M2-W1",
+      "title": "M2 Week 1 — Core Compute and IAM",
+      "question_count": 18
+    },
+    {
+      "id": "M2-W2",
+      "title": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "question_count": 18
+    },
+    {
+      "id": "M2-W3",
+      "title": "M2 Week 3 — Databases, Serverless and Application Services",
+      "question_count": 18
+    },
+    {
+      "id": "M2-W4",
+      "title": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "question_count": 18
+    }
+  ],
+  "question_types": [
+    "foundational",
+    "command_or_practical",
+    "application",
+    "scenario"
+  ],
+  "schema_notes": {
+    "correct_option_index": "Zero-based index into options",
+    "distractor_feedback": "Maps each incorrect option text to an explanation of why it is incorrect",
+    "progress": "The website should store learner progress separately in browser localStorage"
+  },
+  "questions": [
+    {
+      "id": "m1-w1-q001",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "Which statement best describes cloud computing",
+      "type": "foundational",
+      "question": "Which statement best describes cloud computing?",
+      "options": [
+        "Using computing resources delivered over a network on demand, usually with usage-based pricing",
+        "Buying a physical server for every application",
+        "Using only software installed on a personal laptop",
+        "Storing every file on a USB drive"
+      ],
+      "correct_answer": "Using computing resources delivered over a network on demand, usually with usage-based pricing",
+      "correct_option_index": 0,
+      "explanation": "Cloud computing provides on-demand access to shared computing resources such as servers, storage and networking. Ownership of physical hardware is not required.",
+      "distractor_feedback": {
+        "Buying a physical server for every application": "Buying hardware is traditional on-premises provisioning, not the defining feature of cloud computing.",
+        "Using only software installed on a personal laptop": "Local software can be used without cloud infrastructure.",
+        "Storing every file on a USB drive": "A USB drive is local storage, not an on-demand cloud service."
+      }
+    },
+    {
+      "id": "m1-w1-q002",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "A team needs virtual machines but wants to manage the operating system and installed softw",
+      "type": "application",
+      "question": "A team needs virtual machines but wants to manage the operating system and installed software. Which service model fits best?",
+      "options": [
+        "A finished business application",
+        "Infrastructure as a Service (IaaS)",
+        "Software as a Service (SaaS)",
+        "Function as a Service (FaaS)"
+      ],
+      "correct_answer": "Infrastructure as a Service (IaaS)",
+      "correct_option_index": 1,
+      "explanation": "IaaS supplies fundamental infrastructure such as virtual machines, storage and networks while the customer manages the guest OS and applications.",
+      "distractor_feedback": {
+        "A finished business application": "A finished application is closer to SaaS than IaaS.",
+        "Software as a Service (SaaS)": "SaaS gives the customer a finished application and much less infrastructure control.",
+        "Function as a Service (FaaS)": "FaaS runs event-triggered functions rather than giving general-purpose VM administration."
+      }
+    },
+    {
+      "id": "m1-w1-q003",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "Which is the clearest example of SaaS",
+      "type": "scenario",
+      "question": "Which is the clearest example of SaaS?",
+      "options": [
+        "Configuring a VPC route table",
+        "Installing a hypervisor on a physical server",
+        "Using a browser-based email application managed by its provider",
+        "Creating and patching your own virtual machine"
+      ],
+      "correct_answer": "Using a browser-based email application managed by its provider",
+      "correct_option_index": 2,
+      "explanation": "With SaaS, the provider operates the application and underlying platform; the customer mainly uses and configures the service.",
+      "distractor_feedback": {
+        "Configuring a VPC route table": "A route table is a networking resource, not an end-user application.",
+        "Installing a hypervisor on a physical server": "Installing a hypervisor is infrastructure management.",
+        "Creating and patching your own virtual machine": "Creating and patching a VM is infrastructure administration."
+      }
+    },
+    {
+      "id": "m1-w1-q004",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "What is a key characteristic of a public cloud",
+      "type": "application",
+      "question": "What is a key characteristic of a public cloud?",
+      "options": [
+        "Every customer owns a separate physical data centre",
+        "Resources can only be accessed from one office",
+        "The customer must maintain all provider hardware",
+        "A provider makes computing services available to multiple customers over the internet or private connectivity"
+      ],
+      "correct_answer": "A provider makes computing services available to multiple customers over the internet or private connectivity",
+      "correct_option_index": 3,
+      "explanation": "Public cloud services are offered by a cloud provider to many customers, with logical isolation between customer environments.",
+      "distractor_feedback": {
+        "Every customer owns a separate physical data centre": "Customers generally do not each own a separate provider data centre.",
+        "Resources can only be accessed from one office": "Access is not inherently restricted to one office.",
+        "The customer must maintain all provider hardware": "The provider maintains the underlying cloud hardware."
+      }
+    },
+    {
+      "id": "m1-w1-q005",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "An organisation uses its own data centre for sensitive workloads and a public cloud for va",
+      "type": "foundational",
+      "question": "An organisation uses its own data centre for sensitive workloads and a public cloud for variable demand. What deployment approach is this?",
+      "options": [
+        "Hybrid cloud",
+        "Public cloud only",
+        "Private cloud only",
+        "Community cloud only"
+      ],
+      "correct_answer": "Hybrid cloud",
+      "correct_option_index": 0,
+      "explanation": "A hybrid approach combines private infrastructure with public cloud services, allowing workloads or data to span the environments.",
+      "distractor_feedback": {
+        "Public cloud only": "Public-only does not include the organisation's private data centre.",
+        "Private cloud only": "Private-only does not include public cloud services.",
+        "Community cloud only": "Community cloud is shared by organisations with common requirements, not simply private plus public."
+      }
+    },
+    {
+      "id": "m1-w1-q006",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "What does elasticity mean in cloud computing",
+      "type": "scenario",
+      "question": "What does elasticity mean in cloud computing?",
+      "options": [
+        "All workloads must run continuously",
+        "Resources can expand or contract to match changing demand",
+        "Every resource must remain at a fixed size",
+        "A server is physically moved between data centres"
+      ],
+      "correct_answer": "Resources can expand or contract to match changing demand",
+      "correct_option_index": 1,
+      "explanation": "Elasticity is the ability to adjust resource capacity in response to workload demand.",
+      "distractor_feedback": {
+        "All workloads must run continuously": "Elasticity does not require every workload to run continuously.",
+        "Every resource must remain at a fixed size": "Fixed capacity is the opposite of elasticity.",
+        "A server is physically moved between data centres": "Physical relocation is not the definition."
+      }
+    },
+    {
+      "id": "m1-w1-q007",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "Which benefit is most directly associated with measured, usage-based cloud billing",
+      "type": "application",
+      "question": "Which benefit is most directly associated with measured, usage-based cloud billing?",
+      "options": [
+        "Costs never change from month to month",
+        "The provider transfers ownership of hardware to the customer",
+        "Paying for the resources consumed rather than purchasing all capacity upfront",
+        "All cloud services are free"
+      ],
+      "correct_answer": "Paying for the resources consumed rather than purchasing all capacity upfront",
+      "correct_option_index": 2,
+      "explanation": "Measured service makes usage observable and supports consumption-based billing; costs still need monitoring.",
+      "distractor_feedback": {
+        "Costs never change from month to month": "Usage changes can make bills vary.",
+        "The provider transfers ownership of hardware to the customer": "Customers normally consume provider-owned infrastructure rather than receiving its ownership.",
+        "All cloud services are free": "Cloud services are not universally free."
+      }
+    },
+    {
+      "id": "m1-w1-q008",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "In a shared-responsibility model, who is generally responsible for securing the physical d",
+      "type": "application",
+      "question": "In a shared-responsibility model, who is generally responsible for securing the physical data centre?",
+      "options": [
+        "The customer using the service",
+        "The customer's application end users",
+        "The customer's Git repository",
+        "The cloud provider"
+      ],
+      "correct_answer": "The cloud provider",
+      "correct_option_index": 3,
+      "explanation": "The provider is responsible for security of the cloud, including physical facilities and underlying infrastructure.",
+      "distractor_feedback": {
+        "The customer using the service": "Customers remain responsible for many controls in the cloud, but not the provider's physical facility.",
+        "The customer's application end users": "End users do not operate the cloud provider's data centre.",
+        "The customer's Git repository": "A Git repository does not own or secure the facility."
+      }
+    },
+    {
+      "id": "m1-w1-q009",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "Which task is commonly the customer's responsibility when running an IaaS virtual machine",
+      "type": "foundational",
+      "question": "Which task is commonly the customer's responsibility when running an IaaS virtual machine?",
+      "options": [
+        "Patching and securing the guest operating system",
+        "Maintaining the provider's physical building",
+        "Replacing failed disks in the provider's storage array",
+        "Securing the provider's hypervisor hardware"
+      ],
+      "correct_answer": "Patching and securing the guest operating system",
+      "correct_option_index": 0,
+      "explanation": "With IaaS, customers typically manage the guest OS, applications, identities and configuration, while the provider manages physical infrastructure.",
+      "distractor_feedback": {
+        "Maintaining the provider's physical building": "Physical facilities are provider responsibility.",
+        "Replacing failed disks in the provider's storage array": "Physical storage hardware is provider responsibility.",
+        "Securing the provider's hypervisor hardware": "The underlying virtualization infrastructure is provider responsibility."
+      }
+    },
+    {
+      "id": "m1-w1-q010",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "What is the main purpose of the SDLC",
+      "type": "application",
+      "question": "What is the main purpose of the SDLC?",
+      "options": [
+        "To guarantee that software never needs maintenance",
+        "To provide a structured process for planning, building, testing, releasing and maintaining software",
+        "To define only how servers are purchased",
+        "To replace all software testing"
+      ],
+      "correct_answer": "To provide a structured process for planning, building, testing, releasing and maintaining software",
+      "correct_option_index": 1,
+      "explanation": "The Software Development Life Cycle structures software work from requirements through maintenance.",
+      "distractor_feedback": {
+        "To guarantee that software never needs maintenance": "Software maintenance remains necessary after release.",
+        "To define only how servers are purchased": "Server purchasing is only one possible operational concern.",
+        "To replace all software testing": "Testing is an important SDLC activity, not something the SDLC replaces."
+      }
+    },
+    {
+      "id": "m1-w1-q011",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "A developer changes code, tests it, and releases it to users. Which SDLC phase most direct",
+      "type": "application",
+      "question": "A developer changes code, tests it, and releases it to users. Which SDLC phase most directly describes making the change available to users?",
+      "options": [
+        "Design",
+        "Maintenance",
+        "Deployment",
+        "Requirements gathering"
+      ],
+      "correct_answer": "Deployment",
+      "correct_option_index": 2,
+      "explanation": "Deployment is the release or installation of a software change into its target environment.",
+      "distractor_feedback": {
+        "Design": "Design plans the solution before implementation.",
+        "Maintenance": "Maintenance covers ongoing support and updates after release.",
+        "Requirements gathering": "Requirements gathering identifies what should be built."
+      }
+    },
+    {
+      "id": "m1-w1-q012",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "Why do teams separate development, testing and production environments",
+      "type": "scenario",
+      "question": "Why do teams separate development, testing and production environments?",
+      "options": [
+        "To avoid writing tests",
+        "To make every environment behave differently",
+        "To ensure developers cannot collaborate",
+        "To validate changes before exposing real users and production data to them"
+      ],
+      "correct_answer": "To validate changes before exposing real users and production data to them",
+      "correct_option_index": 3,
+      "explanation": "Separate environments reduce the risk of untested changes affecting production and allow controlled validation.",
+      "distractor_feedback": {
+        "To avoid writing tests": "Separate environments do not remove the need for tests.",
+        "To make every environment behave differently": "The goal is controlled similarity, not arbitrary differences.",
+        "To ensure developers cannot collaborate": "Environment separation does not prevent collaboration."
+      }
+    },
+    {
+      "id": "m1-w1-q013",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "Which statement about cloud scalability is accurate",
+      "type": "foundational",
+      "question": "Which statement about cloud scalability is accurate?",
+      "options": [
+        "A system can be designed to handle increased workload by adding resources or distributing work",
+        "Scalability means a system can never fail",
+        "Scalability always means buying a larger physical server",
+        "Scalability removes the need for monitoring"
+      ],
+      "correct_answer": "A system can be designed to handle increased workload by adding resources or distributing work",
+      "correct_option_index": 0,
+      "explanation": "Scalability is the ability to accommodate increased load, either vertically or horizontally.",
+      "distractor_feedback": {
+        "Scalability means a system can never fail": "Scalable systems can still fail.",
+        "Scalability always means buying a larger physical server": "Vertical scaling is only one approach; horizontal scaling adds instances or nodes.",
+        "Scalability removes the need for monitoring": "Monitoring remains important to understand demand and failures."
+      }
+    },
+    {
+      "id": "m1-w1-q014",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "A company wants to avoid buying enough servers for its rare peak traffic. Which cloud prop",
+      "type": "application",
+      "question": "A company wants to avoid buying enough servers for its rare peak traffic. Which cloud property helps most?",
+      "options": [
+        "Removing all access controls",
+        "On-demand provisioning and elasticity",
+        "Manual hardware procurement",
+        "Fixed-capacity planning only"
+      ],
+      "correct_answer": "On-demand provisioning and elasticity",
+      "correct_option_index": 1,
+      "explanation": "On-demand provisioning and elasticity let the company add capacity when needed instead of permanently owning peak capacity.",
+      "distractor_feedback": {
+        "Removing all access controls": "Access controls are unrelated to capacity planning.",
+        "Manual hardware procurement": "Manual procurement is slower and requires upfront purchasing.",
+        "Fixed-capacity planning only": "Fixed capacity does not adapt to rare peaks."
+      }
+    },
+    {
+      "id": "m1-w1-q015",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "What is vendor lock-in",
+      "type": "scenario",
+      "question": "What is vendor lock-in?",
+      "options": [
+        "A virtual machine that is stopped",
+        "A cloud bill that is paid monthly",
+        "A situation where moving away from a provider is difficult or costly because of dependencies",
+        "A security group rule that blocks SSH"
+      ],
+      "correct_answer": "A situation where moving away from a provider is difficult or costly because of dependencies",
+      "correct_option_index": 2,
+      "explanation": "Vendor lock-in can arise from proprietary services, data formats, skills or architectures that make migration difficult.",
+      "distractor_feedback": {
+        "A virtual machine that is stopped": "A stopped VM is a resource state.",
+        "A cloud bill that is paid monthly": "Monthly billing is not vendor lock-in.",
+        "A security group rule that blocks SSH": "A security group rule is a network access control."
+      }
+    },
+    {
+      "id": "m1-w1-q016",
+      "section_id": "M1-W1",
+      "section": "M1 Week 1 — Cloud Computing Fundamentals",
+      "topic": "Why should a cloud engineer monitor cloud spending",
+      "type": "application",
+      "question": "Why should a cloud engineer monitor cloud spending?",
+      "options": [
+        "Because monitoring automatically makes every service free",
+        "Because all resources stop billing when unused",
+        "Because cloud pricing never changes",
+        "To detect unexpected usage and keep resource costs within budget"
+      ],
+      "correct_answer": "To detect unexpected usage and keep resource costs within budget",
+      "correct_option_index": 3,
+      "explanation": "Monitoring usage and cost helps identify waste, unexpected growth and budget risks.",
+      "distractor_feedback": {
+        "Because monitoring automatically makes every service free": "Monitoring does not make services free.",
+        "Because all resources stop billing when unused": "Some stopped resources, such as attached storage, can still incur charges.",
+        "Because cloud pricing never changes": "Cloud pricing and usage can change."
+      }
+    },
+    {
+      "id": "m1-w2-q001",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "What is the primary role of an operating system",
+      "type": "foundational",
+      "question": "What is the primary role of an operating system?",
+      "options": [
+        "To manage hardware resources and provide services for applications and users",
+        "To act only as a text editor",
+        "To replace the computer's CPU",
+        "To provide internet access without networking hardware"
+      ],
+      "correct_answer": "To manage hardware resources and provide services for applications and users",
+      "correct_option_index": 0,
+      "explanation": "An OS manages resources such as CPU, memory, storage and devices, and provides an environment for programs.",
+      "distractor_feedback": {
+        "To act only as a text editor": "A text editor is an application, not the OS's primary role.",
+        "To replace the computer's CPU": "The OS manages the CPU; it does not replace it.",
+        "To provide internet access without networking hardware": "Internet access also depends on networking hardware and connectivity."
+      }
+    },
+    {
+      "id": "m1-w2-q002",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "What is the Linux kernel",
+      "type": "command_or_practical",
+      "question": "What is the Linux kernel?",
+      "options": [
+        "A package manager",
+        "The core of the operating system that manages hardware and system resources",
+        "A graphical desktop theme",
+        "A user-created shell script"
+      ],
+      "correct_answer": "The core of the operating system that manages hardware and system resources",
+      "correct_option_index": 1,
+      "explanation": "The kernel handles core functions such as process scheduling, memory management and device interaction.",
+      "distractor_feedback": {
+        "A package manager": "A package manager installs and manages software.",
+        "A graphical desktop theme": "A desktop theme changes appearance.",
+        "A user-created shell script": "A shell script is a user-level program."
+      }
+    },
+    {
+      "id": "m1-w2-q003",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "Which command prints the current working directory",
+      "type": "scenario",
+      "question": "Which command prints the current working directory?",
+      "options": [
+        "cd",
+        "whoami",
+        "pwd",
+        "ls"
+      ],
+      "correct_answer": "pwd",
+      "correct_option_index": 2,
+      "explanation": "`pwd` prints the absolute path of the current working directory.",
+      "distractor_feedback": {
+        "cd": "`cd` changes directories.",
+        "whoami": "`whoami` prints the current username.",
+        "ls": "`ls` lists directory contents."
+      }
+    },
+    {
+      "id": "m1-w2-q004",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "You want to list files, including hidden dotfiles, in long format. Which command is approp",
+      "type": "application",
+      "question": "You want to list files, including hidden dotfiles, in long format. Which command is appropriate?",
+      "options": [
+        "pwd -la",
+        "cd -la",
+        "whoami -la",
+        "ls -la"
+      ],
+      "correct_answer": "ls -la",
+      "correct_option_index": 3,
+      "explanation": "`ls -l` requests long format and `-a` includes hidden entries whose names begin with a dot.",
+      "distractor_feedback": {
+        "pwd -la": "`pwd` prints a path and does not list directory entries.",
+        "cd -la": "`cd` changes the working directory.",
+        "whoami -la": "`whoami` prints the effective username."
+      }
+    },
+    {
+      "id": "m1-w2-q005",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "Which command changes the current directory to /var/log",
+      "type": "foundational",
+      "question": "Which command changes the current directory to /var/log?",
+      "options": [
+        "cd /var/log",
+        "pwd /var/log",
+        "mkdir /var/log",
+        "touch /var/log"
+      ],
+      "correct_answer": "cd /var/log",
+      "correct_option_index": 0,
+      "explanation": "`cd` changes the shell's current working directory.",
+      "distractor_feedback": {
+        "pwd /var/log": "`pwd` displays the current path; it does not change it.",
+        "mkdir /var/log": "`mkdir` creates a directory.",
+        "touch /var/log": "`touch` creates an empty file or updates timestamps."
+      }
+    },
+    {
+      "id": "m1-w2-q006",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "What does `mkdir -p project/logs` do",
+      "type": "command_or_practical",
+      "question": "What does `mkdir -p project/logs` do?",
+      "options": [
+        "Lists the directory tree",
+        "Creates the directory path, including missing parent directories",
+        "Deletes project and logs",
+        "Creates a file named logs"
+      ],
+      "correct_answer": "Creates the directory path, including missing parent directories",
+      "correct_option_index": 1,
+      "explanation": "The `-p` option creates missing parent directories and does not complain if the target directory already exists.",
+      "distractor_feedback": {
+        "Lists the directory tree": "Listing requires a command such as `ls`.",
+        "Deletes project and logs": "The command does not delete directories.",
+        "Creates a file named logs": "`mkdir` creates directories, not files."
+      }
+    },
+    {
+      "id": "m1-w2-q007",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "Which command displays the contents of a text file in the terminal",
+      "type": "application",
+      "question": "Which command displays the contents of a text file in the terminal?",
+      "options": [
+        "chmod notes.txt",
+        "ps notes.txt",
+        "cat notes.txt",
+        "cd notes.txt"
+      ],
+      "correct_answer": "cat notes.txt",
+      "correct_option_index": 2,
+      "explanation": "`cat` outputs file contents to standard output.",
+      "distractor_feedback": {
+        "chmod notes.txt": "`chmod` changes permissions.",
+        "ps notes.txt": "`ps` displays process information.",
+        "cd notes.txt": "`cd` changes directories and expects a directory path."
+      }
+    },
+    {
+      "id": "m1-w2-q008",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "What does `cp source.txt backup.txt` do",
+      "type": "application",
+      "question": "What does `cp source.txt backup.txt` do?",
+      "options": [
+        "Moves source.txt and removes the original",
+        "Renames the current directory",
+        "Changes file ownership",
+        "Copies source.txt to backup.txt"
+      ],
+      "correct_answer": "Copies source.txt to backup.txt",
+      "correct_option_index": 3,
+      "explanation": "`cp` copies the source file to the destination path.",
+      "distractor_feedback": {
+        "Moves source.txt and removes the original": "Moving is normally done with `mv`.",
+        "Renames the current directory": "The command acts on files, not the current directory name.",
+        "Changes file ownership": "Ownership changes use `chown`."
+      }
+    },
+    {
+      "id": "m1-w2-q009",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "Which command moves a file or renames it",
+      "type": "foundational",
+      "question": "Which command moves a file or renames it?",
+      "options": [
+        "mv old.txt new.txt",
+        "cp old.txt new.txt",
+        "cat old.txt new.txt",
+        "grep old.txt new.txt"
+      ],
+      "correct_answer": "mv old.txt new.txt",
+      "correct_option_index": 0,
+      "explanation": "`mv` moves a file or renames it when source and destination are in the same directory.",
+      "distractor_feedback": {
+        "cp old.txt new.txt": "`cp` creates a copy and leaves the original.",
+        "cat old.txt new.txt": "`cat` prints file contents.",
+        "grep old.txt new.txt": "`grep` searches text patterns."
+      }
+    },
+    {
+      "id": "m1-w2-q010",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "What does `rm -r old-folder` do",
+      "type": "command_or_practical",
+      "question": "What does `rm -r old-folder` do?",
+      "options": [
+        "Moves the directory to the home folder",
+        "Removes a directory and its contents recursively",
+        "Renames the directory",
+        "Displays all files in the directory"
+      ],
+      "correct_answer": "Removes a directory and its contents recursively",
+      "correct_option_index": 1,
+      "explanation": "The recursive option allows `rm` to remove directories and their contents; use it carefully.",
+      "distractor_feedback": {
+        "Moves the directory to the home folder": "Moving requires a destination with `mv`.",
+        "Renames the directory": "Renaming uses `mv`.",
+        "Displays all files in the directory": "Listing uses `ls`."
+      }
+    },
+    {
+      "id": "m1-w2-q011",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "In Linux permissions, what does `r` represent",
+      "type": "application",
+      "question": "In Linux permissions, what does `r` represent?",
+      "options": [
+        "Rename permission",
+        "Remote access",
+        "Read permission",
+        "Run as root"
+      ],
+      "correct_answer": "Read permission",
+      "correct_option_index": 2,
+      "explanation": "The `r` permission allows reading a file or, for directories, listing entries subject to other permissions.",
+      "distractor_feedback": {
+        "Rename permission": "There is no standard rename permission bit.",
+        "Remote access": "Remote access is unrelated to this permission symbol.",
+        "Run as root": "Root privilege is not represented by `r`."
+      }
+    },
+    {
+      "id": "m1-w2-q012",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "For a directory, what does execute (`x`) permission allow",
+      "type": "scenario",
+      "question": "For a directory, what does execute (`x`) permission allow?",
+      "options": [
+        "Editing every file inside it",
+        "Changing its owner",
+        "Automatically granting root access",
+        "Traversing or entering the directory when path permissions permit"
+      ],
+      "correct_answer": "Traversing or entering the directory when path permissions permit",
+      "correct_option_index": 3,
+      "explanation": "Directory execute permission allows traversal/search of the directory; read permission controls listing names.",
+      "distractor_feedback": {
+        "Editing every file inside it": "Editing files depends on file permissions and directory write permissions.",
+        "Changing its owner": "Ownership changes require suitable privileges and `chown`.",
+        "Automatically granting root access": "Execute permission does not grant root access."
+      }
+    },
+    {
+      "id": "m1-w2-q013",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "What does `chmod 755 script.sh` set",
+      "type": "foundational",
+      "question": "What does `chmod 755 script.sh` set?",
+      "options": [
+        "Owner: read/write/execute; group and others: read/execute",
+        "Everyone: read/write/execute",
+        "Owner: read only; others: no access",
+        "Owner: read/write; group: write; others: execute only"
+      ],
+      "correct_answer": "Owner: read/write/execute; group and others: read/execute",
+      "correct_option_index": 0,
+      "explanation": "In octal permissions, 7 is rwx and 5 is r-x, so 755 means owner rwx and group/others r-x.",
+      "distractor_feedback": {
+        "Everyone: read/write/execute": "777 would give everyone rwx.",
+        "Owner: read only; others: no access": "400 would give owner read only.",
+        "Owner: read/write; group: write; others: execute only": "The stated combination does not correspond to 755."
+      }
+    },
+    {
+      "id": "m1-w2-q014",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "Which command shows running processes",
+      "type": "command_or_practical",
+      "question": "Which command shows running processes?",
+      "options": [
+        "mkdir",
+        "ps",
+        "pwd",
+        "chmod"
+      ],
+      "correct_answer": "ps",
+      "correct_option_index": 1,
+      "explanation": "`ps` reports process information; options such as `ps aux` show a broader process listing on common Linux systems.",
+      "distractor_feedback": {
+        "mkdir": "`mkdir` creates directories.",
+        "pwd": "`pwd` prints the working directory.",
+        "chmod": "`chmod` changes permissions."
+      }
+    },
+    {
+      "id": "m1-w2-q015",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "What is a zombie process",
+      "type": "scenario",
+      "question": "What is a zombie process?",
+      "options": [
+        "A process that has no parent and is always running",
+        "A malicious program that hides its name",
+        "A process that has finished but still has an entry awaiting collection by its parent",
+        "A process using 100% CPU forever"
+      ],
+      "correct_answer": "A process that has finished but still has an entry awaiting collection by its parent",
+      "correct_option_index": 2,
+      "explanation": "A zombie has terminated, but its parent has not yet collected its exit status with a wait operation.",
+      "distractor_feedback": {
+        "A process that has no parent and is always running": "An orphan is a running process whose parent has exited; it is not the definition of zombie.",
+        "A malicious program that hides its name": "A hidden malicious process is unrelated.",
+        "A process using 100% CPU forever": "High CPU use describes a running process, not a zombie."
+      }
+    },
+    {
+      "id": "m1-w2-q016",
+      "section_id": "M1-W2",
+      "section": "M1 Week 2 — Linux Fundamentals",
+      "topic": "What does `sudo apt update` do on Ubuntu/Debian systems",
+      "type": "application",
+      "question": "What does `sudo apt update` do on Ubuntu/Debian systems?",
+      "options": [
+        "Upgrades every installed package",
+        "Deletes cached packages and user files",
+        "Installs the Linux kernel from source",
+        "Refreshes the local package index from configured repositories"
+      ],
+      "correct_answer": "Refreshes the local package index from configured repositories",
+      "correct_option_index": 3,
+      "explanation": "`apt update` downloads updated package metadata; package upgrades are a separate operation such as `apt upgrade`.",
+      "distractor_feedback": {
+        "Upgrades every installed package": "`apt upgrade` performs package upgrades.",
+        "Deletes cached packages and user files": "The command does not delete user files.",
+        "Installs the Linux kernel from source": "It does not compile and install a kernel from source."
+      }
+    },
+    {
+      "id": "m1-w3-q001",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "What problem does version control solve",
+      "type": "foundational",
+      "question": "What problem does version control solve?",
+      "options": [
+        "It records changes over time so work can be reviewed, compared and restored",
+        "It automatically prevents every coding error",
+        "It replaces the need for backups in all situations",
+        "It hosts websites by itself"
+      ],
+      "correct_answer": "It records changes over time so work can be reviewed, compared and restored",
+      "correct_option_index": 0,
+      "explanation": "Version control tracks project history and supports collaboration, branching and recovery of earlier states.",
+      "distractor_feedback": {
+        "It automatically prevents every coding error": "Version control cannot prevent every bug.",
+        "It replaces the need for backups in all situations": "A Git repository is not a complete backup strategy by itself.",
+        "It hosts websites by itself": "Git tracks files; it does not itself host a website."
+      }
+    },
+    {
+      "id": "m1-w3-q002",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "What is Git",
+      "type": "command_or_practical",
+      "question": "What is Git?",
+      "options": [
+        "A Linux package manager",
+        "A distributed version control system",
+        "A cloud provider",
+        "A programming language"
+      ],
+      "correct_answer": "A distributed version control system",
+      "correct_option_index": 1,
+      "explanation": "Git is a distributed version control system used to track changes in files.",
+      "distractor_feedback": {
+        "A Linux package manager": "Package managers install software.",
+        "A cloud provider": "A cloud provider offers infrastructure and services.",
+        "A programming language": "Git is not a programming language."
+      }
+    },
+    {
+      "id": "m1-w3-q003",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "What is GitHub primarily used for",
+      "type": "scenario",
+      "question": "What is GitHub primarily used for?",
+      "options": [
+        "Managing Linux users",
+        "Automatically deploying every repository to production",
+        "Hosting Git repositories and providing collaboration tools",
+        "Replacing Git's version-control engine"
+      ],
+      "correct_answer": "Hosting Git repositories and providing collaboration tools",
+      "correct_option_index": 2,
+      "explanation": "GitHub hosts Git repositories and adds collaboration features such as pull requests and issue tracking.",
+      "distractor_feedback": {
+        "Managing Linux users": "Linux users are managed by the operating system.",
+        "Automatically deploying every repository to production": "Deployment requires configuration and is not automatic for every repository.",
+        "Replacing Git's version-control engine": "Git itself performs version control."
+      }
+    },
+    {
+      "id": "m1-w3-q004",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "Which command initializes a Git repository in the current directory",
+      "type": "application",
+      "question": "Which command initializes a Git repository in the current directory?",
+      "options": [
+        "git start",
+        "git clone",
+        "git push",
+        "git init"
+      ],
+      "correct_answer": "git init",
+      "correct_option_index": 3,
+      "explanation": "`git init` creates a new local Git repository in the current directory.",
+      "distractor_feedback": {
+        "git start": "`git start` is not the standard Git command for initialization.",
+        "git clone": "`git clone` copies an existing repository.",
+        "git push": "`git push` sends local commits to a remote."
+      }
+    },
+    {
+      "id": "m1-w3-q005",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "What is the staging area used for",
+      "type": "foundational",
+      "question": "What is the staging area used for?",
+      "options": [
+        "Selecting changes that will be included in the next commit",
+        "Storing files permanently on GitHub",
+        "Running automated tests",
+        "Creating a new remote repository"
+      ],
+      "correct_answer": "Selecting changes that will be included in the next commit",
+      "correct_option_index": 0,
+      "explanation": "The staging area lets you choose which changes form the next commit.",
+      "distractor_feedback": {
+        "Storing files permanently on GitHub": "A commit is local until pushed; staging is not GitHub storage.",
+        "Running automated tests": "Testing is performed by test tools or scripts.",
+        "Creating a new remote repository": "Creating a remote repository is a hosting-platform action."
+      }
+    },
+    {
+      "id": "m1-w3-q006",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "Which command stages all changes in the current directory tree",
+      "type": "command_or_practical",
+      "question": "Which command stages all changes in the current directory tree?",
+      "options": [
+        "git status .",
+        "git add .",
+        "git commit .",
+        "git push ."
+      ],
+      "correct_answer": "git add .",
+      "correct_option_index": 1,
+      "explanation": "`git add .` stages new, modified and deleted changes under the current directory, subject to ignore rules.",
+      "distractor_feedback": {
+        "git status .": "`git status` reports repository state.",
+        "git commit .": "`git commit` records staged changes; it does not stage them by itself.",
+        "git push .": "`git push` sends commits to a remote."
+      }
+    },
+    {
+      "id": "m1-w3-q007",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "What does `git commit -m \"Fix login bug\"` do",
+      "type": "application",
+      "question": "What does `git commit -m \"Fix login bug\"` do?",
+      "options": [
+        "Creates a new branch",
+        "Downloads changes from a remote",
+        "Creates a commit from staged changes with the supplied message",
+        "Uploads files to GitHub immediately"
+      ],
+      "correct_answer": "Creates a commit from staged changes with the supplied message",
+      "correct_option_index": 2,
+      "explanation": "A commit records the staged snapshot in the local repository history.",
+      "distractor_feedback": {
+        "Creates a new branch": "Creating a branch uses `git branch` or `git switch -c`.",
+        "Downloads changes from a remote": "Downloading remote updates uses `git fetch` or `git pull`.",
+        "Uploads files to GitHub immediately": "Uploading commits uses `git push`."
+      }
+    },
+    {
+      "id": "m1-w3-q008",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "Why should a commit message be meaningful",
+      "type": "application",
+      "question": "Why should a commit message be meaningful?",
+      "options": [
+        "It determines the file permissions",
+        "It encrypts the commit",
+        "It replaces the code review",
+        "It helps people understand the purpose of a change in project history"
+      ],
+      "correct_answer": "It helps people understand the purpose of a change in project history",
+      "correct_option_index": 3,
+      "explanation": "A useful commit message makes history easier to understand and review.",
+      "distractor_feedback": {
+        "It determines the file permissions": "Permissions are controlled by filesystem or Git mode changes.",
+        "It encrypts the commit": "Commit messages do not encrypt commits.",
+        "It replaces the code review": "A message does not replace code review."
+      }
+    },
+    {
+      "id": "m1-w3-q009",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "What is a branch in Git",
+      "type": "foundational",
+      "question": "What is a branch in Git?",
+      "options": [
+        "An independent line of development within a repository",
+        "A separate physical server",
+        "A copy of GitHub's entire internet service",
+        "A file permission setting"
+      ],
+      "correct_answer": "An independent line of development within a repository",
+      "correct_option_index": 0,
+      "explanation": "Branches allow work on features or fixes without immediately changing another branch's history.",
+      "distractor_feedback": {
+        "A separate physical server": "A branch is a reference in repository history, not a server.",
+        "A copy of GitHub's entire internet service": "It does not copy GitHub's service.",
+        "A file permission setting": "It is unrelated to filesystem permissions."
+      }
+    },
+    {
+      "id": "m1-w3-q010",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "Which command creates and switches to a new branch named feature-a",
+      "type": "command_or_practical",
+      "question": "Which command creates and switches to a new branch named feature-a?",
+      "options": [
+        "git fetch -c feature-a",
+        "git switch -c feature-a",
+        "git push feature-a",
+        "git status feature-a"
+      ],
+      "correct_answer": "git switch -c feature-a",
+      "correct_option_index": 1,
+      "explanation": "`git switch -c` creates a branch and checks it out.",
+      "distractor_feedback": {
+        "git fetch -c feature-a": "`git fetch` downloads remote references and does not create/check out a local branch this way.",
+        "git push feature-a": "`git push` sends commits to a remote branch.",
+        "git status feature-a": "`git status` reports state."
+      }
+    },
+    {
+      "id": "m1-w3-q011",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "What does `git clone URL` do",
+      "type": "application",
+      "question": "What does `git clone URL` do?",
+      "options": [
+        "Deletes the remote repository",
+        "Only downloads the latest single file",
+        "Creates a local copy of a remote repository, including its history",
+        "Uploads the current folder to the remote"
+      ],
+      "correct_answer": "Creates a local copy of a remote repository, including its history",
+      "correct_option_index": 2,
+      "explanation": "Cloning creates a local repository and configures the source remote, usually named origin.",
+      "distractor_feedback": {
+        "Deletes the remote repository": "Cloning does not delete the source.",
+        "Only downloads the latest single file": "A clone includes repository history, not just one file.",
+        "Uploads the current folder to the remote": "Uploading changes is done with push."
+      }
+    },
+    {
+      "id": "m1-w3-q012",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "What does `git fetch` do",
+      "type": "scenario",
+      "question": "What does `git fetch` do?",
+      "options": [
+        "Fetches and always merges changes into the current branch",
+        "Deletes local commits",
+        "Publishes local commits to the remote",
+        "Downloads remote updates and references without integrating them into the current branch"
+      ],
+      "correct_answer": "Downloads remote updates and references without integrating them into the current branch",
+      "correct_option_index": 3,
+      "explanation": "Fetch updates remote-tracking references; you decide whether and how to merge or rebase afterward.",
+      "distractor_feedback": {
+        "Fetches and always merges changes into the current branch": "`git pull` fetches and integrates according to configuration.",
+        "Deletes local commits": "Fetch does not delete local commits.",
+        "Publishes local commits to the remote": "Publishing uses `git push`."
+      }
+    },
+    {
+      "id": "m1-w3-q013",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "What is the usual effect of `git pull`",
+      "type": "foundational",
+      "question": "What is the usual effect of `git pull`?",
+      "options": [
+        "Fetches remote changes and integrates them into the current branch",
+        "Only displays local status",
+        "Deletes the current branch",
+        "Uploads all uncommitted files"
+      ],
+      "correct_answer": "Fetches remote changes and integrates them into the current branch",
+      "correct_option_index": 0,
+      "explanation": "`git pull` combines fetching with integration, commonly merge or rebase depending on configuration.",
+      "distractor_feedback": {
+        "Only displays local status": "`git status` displays local status.",
+        "Deletes the current branch": "Branch deletion uses a branch deletion command.",
+        "Uploads all uncommitted files": "Uncommitted files are not simply uploaded by pull."
+      }
+    },
+    {
+      "id": "m1-w3-q014",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "Which command sends local commits to a remote repository",
+      "type": "command_or_practical",
+      "question": "Which command sends local commits to a remote repository?",
+      "options": [
+        "git diff",
+        "git push",
+        "git fetch",
+        "git log"
+      ],
+      "correct_answer": "git push",
+      "correct_option_index": 1,
+      "explanation": "`git push` publishes local commits to a configured remote branch.",
+      "distractor_feedback": {
+        "git diff": "`git diff` compares changes.",
+        "git fetch": "`git fetch` downloads remote updates.",
+        "git log": "`git log` displays commit history."
+      }
+    },
+    {
+      "id": "m1-w3-q015",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "What is a merge conflict",
+      "type": "scenario",
+      "question": "What is a merge conflict?",
+      "options": [
+        "A missing Git installation",
+        "A commit message that is too short",
+        "A situation where Git cannot automatically reconcile competing changes",
+        "A failed internet connection only"
+      ],
+      "correct_answer": "A situation where Git cannot automatically reconcile competing changes",
+      "correct_option_index": 2,
+      "explanation": "Conflicts occur when changes overlap or otherwise cannot be combined automatically; a person must resolve them.",
+      "distractor_feedback": {
+        "A missing Git installation": "If Git is missing, Git commands cannot run.",
+        "A commit message that is too short": "Commit-message length does not create a merge conflict.",
+        "A failed internet connection only": "Network failure may stop remote operations but is not a merge conflict."
+      }
+    },
+    {
+      "id": "m1-w3-q016",
+      "section_id": "M1-W3",
+      "section": "M1 Week 3 — Git and Version Control",
+      "topic": "After resolving conflict markers in a file, what should you normally do next",
+      "type": "application",
+      "question": "After resolving conflict markers in a file, what should you normally do next?",
+      "options": [
+        "Delete the entire repository",
+        "Run git clone over the current folder",
+        "Assume Git has already committed the resolution",
+        "Stage the resolved file and complete the merge commit if Git requires it"
+      ],
+      "correct_answer": "Stage the resolved file and complete the merge commit if Git requires it",
+      "correct_option_index": 3,
+      "explanation": "After editing a conflicted file, stage it to mark it resolved, then complete the merge according to Git's instructions.",
+      "distractor_feedback": {
+        "Delete the entire repository": "Deleting the repository is unnecessary and destructive.",
+        "Run git clone over the current folder": "Cloning is not how a merge is completed.",
+        "Assume Git has already committed the resolution": "Git generally waits for the resolution to be staged and merge completed."
+      }
+    },
+    {
+      "id": "m1-w4-q001",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "What is Bash",
+      "type": "foundational",
+      "question": "What is Bash?",
+      "options": [
+        "A command-line shell that can also run scripts",
+        "A cloud database",
+        "A Linux filesystem",
+        "A Git hosting service"
+      ],
+      "correct_answer": "A command-line shell that can also run scripts",
+      "correct_option_index": 0,
+      "explanation": "Bash interprets commands and supports scripting constructs such as variables, loops and functions.",
+      "distractor_feedback": {
+        "A cloud database": "A database stores and queries data.",
+        "A Linux filesystem": "A filesystem organizes files and directories.",
+        "A Git hosting service": "A Git hosting service stores repositories and collaboration data."
+      }
+    },
+    {
+      "id": "m1-w4-q002",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "What is the purpose of a shebang such as `#!/bin/bash` at the top of a script",
+      "type": "command_or_practical",
+      "question": "What is the purpose of a shebang such as `#!/bin/bash` at the top of a script?",
+      "options": [
+        "It schedules the script to run every hour",
+        "It identifies the interpreter used to execute the script when launched appropriately",
+        "It gives the script administrator privileges",
+        "It encrypts the script"
+      ],
+      "correct_answer": "It identifies the interpreter used to execute the script when launched appropriately",
+      "correct_option_index": 1,
+      "explanation": "The shebang tells the operating system which interpreter should execute the script when invoked as an executable.",
+      "distractor_feedback": {
+        "It schedules the script to run every hour": "Scheduling requires a scheduler such as cron.",
+        "It gives the script administrator privileges": "Privileges depend on permissions and how the script is run, not the shebang.",
+        "It encrypts the script": "The shebang does not encrypt content."
+      }
+    },
+    {
+      "id": "m1-w4-q003",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "In Bash, what does `$1` refer to",
+      "type": "scenario",
+      "question": "In Bash, what does `$1` refer to?",
+      "options": [
+        "The number of arguments",
+        "The last command's exit status",
+        "The first positional argument passed to the script or function",
+        "The script's process ID"
+      ],
+      "correct_answer": "The first positional argument passed to the script or function",
+      "correct_option_index": 2,
+      "explanation": "`$1` expands to the first positional parameter.",
+      "distractor_feedback": {
+        "The number of arguments": "The number of positional parameters is `$#`.",
+        "The last command's exit status": "The previous command's exit status is `$?`.",
+        "The script's process ID": "The shell's PID is available as `$$`."
+      }
+    },
+    {
+      "id": "m1-w4-q004",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "What does `$#` represent in a Bash script",
+      "type": "application",
+      "question": "What does `$#` represent in a Bash script?",
+      "options": [
+        "The first argument",
+        "All arguments as one string",
+        "The current username",
+        "The number of positional arguments"
+      ],
+      "correct_answer": "The number of positional arguments",
+      "correct_option_index": 3,
+      "explanation": "`$#` expands to the number of positional parameters supplied.",
+      "distractor_feedback": {
+        "The first argument": "The first argument is `$1`.",
+        "All arguments as one string": "`$@` expands to all positional parameters as separate words when quoted correctly.",
+        "The current username": "The username can be obtained from environment or account commands."
+      }
+    },
+    {
+      "id": "m1-w4-q005",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "Which expansion is generally preferred to pass all script arguments while preserving each ",
+      "type": "foundational",
+      "question": "Which expansion is generally preferred to pass all script arguments while preserving each argument boundary?",
+      "options": [
+        "\"$@\"",
+        "$#",
+        "$0",
+        "$?"
+      ],
+      "correct_answer": "\"$@\"",
+      "correct_option_index": 0,
+      "explanation": "Quoted `\"$@\"` expands to one word per positional argument, preserving spaces inside each argument.",
+      "distractor_feedback": {
+        "$#": "`$#` is a count, not the argument list.",
+        "$0": "`$0` is the script name or invocation path.",
+        "$?": "`$?` is the previous command's exit status."
+      }
+    },
+    {
+      "id": "m1-w4-q006",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "What is the purpose of an `if` statement in Bash",
+      "type": "command_or_practical",
+      "question": "What is the purpose of an `if` statement in Bash?",
+      "options": [
+        "To download a remote repository",
+        "To run commands conditionally based on a test result",
+        "To repeat commands a fixed number of times",
+        "To define a new user account"
+      ],
+      "correct_answer": "To run commands conditionally based on a test result",
+      "correct_option_index": 1,
+      "explanation": "An `if` statement selects a command path based on whether a condition succeeds.",
+      "distractor_feedback": {
+        "To download a remote repository": "Repository download is performed by Git.",
+        "To repeat commands a fixed number of times": "Loops repeat commands.",
+        "To define a new user account": "User creation requires an account-management command."
+      }
+    },
+    {
+      "id": "m1-w4-q007",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "Which Bash construct is designed to repeat commands over a list of items",
+      "type": "application",
+      "question": "Which Bash construct is designed to repeat commands over a list of items?",
+      "options": [
+        "shebang",
+        "export statement",
+        "for loop",
+        "if statement"
+      ],
+      "correct_answer": "for loop",
+      "correct_option_index": 2,
+      "explanation": "A `for` loop iterates over a list or sequence of values.",
+      "distractor_feedback": {
+        "shebang": "A shebang selects an interpreter.",
+        "export statement": "`export` marks variables for child processes.",
+        "if statement": "An `if` statement chooses between conditional paths."
+      }
+    },
+    {
+      "id": "m1-w4-q008",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "What is a Bash function useful for",
+      "type": "application",
+      "question": "What is a Bash function useful for?",
+      "options": [
+        "Creating a cloud region",
+        "Changing the Linux kernel",
+        "Replacing the cron scheduler",
+        "Grouping reusable commands under a name"
+      ],
+      "correct_answer": "Grouping reusable commands under a name",
+      "correct_option_index": 3,
+      "explanation": "Functions package commands so they can be called repeatedly and make scripts easier to organize.",
+      "distractor_feedback": {
+        "Creating a cloud region": "Cloud regions are provider infrastructure concepts.",
+        "Changing the Linux kernel": "Changing the kernel is an OS administration task.",
+        "Replacing the cron scheduler": "Functions do not replace cron's scheduling role."
+      }
+    },
+    {
+      "id": "m1-w4-q009",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "What does `set -x` do in Bash",
+      "type": "foundational",
+      "question": "What does `set -x` do in Bash?",
+      "options": [
+        "Prints commands and their expansions as the shell executes them",
+        "Exits immediately on every non-zero status",
+        "Treats unset variables as errors",
+        "Enables pipeline failure propagation"
+      ],
+      "correct_answer": "Prints commands and their expansions as the shell executes them",
+      "correct_option_index": 0,
+      "explanation": "`set -x` enables execution tracing, which is useful for debugging script flow.",
+      "distractor_feedback": {
+        "Exits immediately on every non-zero status": "`set -e` is associated with exiting on many unhandled failures.",
+        "Treats unset variables as errors": "`set -u` treats unset variables as errors.",
+        "Enables pipeline failure propagation": "`set -o pipefail` changes pipeline status handling."
+      }
+    },
+    {
+      "id": "m1-w4-q010",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "What is the intent of `set -u`",
+      "type": "command_or_practical",
+      "question": "What is the intent of `set -u`?",
+      "options": [
+        "Automatically retry failed commands",
+        "Treat references to unset variables as errors",
+        "Print every command before execution",
+        "Make all variables global"
+      ],
+      "correct_answer": "Treat references to unset variables as errors",
+      "correct_option_index": 1,
+      "explanation": "`set -u` helps catch misspelled or uninitialised variable references.",
+      "distractor_feedback": {
+        "Automatically retry failed commands": "It does not implement retries.",
+        "Print every command before execution": "Tracing is enabled by `set -x`.",
+        "Make all variables global": "It does not make all variables global."
+      }
+    },
+    {
+      "id": "m1-w4-q011",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "What does `set -o pipefail` change",
+      "type": "application",
+      "question": "What does `set -o pipefail` change?",
+      "options": [
+        "Pipelines are disabled",
+        "The script ignores all command failures",
+        "A pipeline can return a failure status if a command within it fails",
+        "Every command is run as root"
+      ],
+      "correct_answer": "A pipeline can return a failure status if a command within it fails",
+      "correct_option_index": 2,
+      "explanation": "With pipefail enabled, a pipeline's status reflects a failing command rather than only the final command's status.",
+      "distractor_feedback": {
+        "Pipelines are disabled": "Pipelines remain enabled.",
+        "The script ignores all command failures": "It helps expose failures rather than ignore them.",
+        "Every command is run as root": "Root privileges require sudo or appropriate identity."
+      }
+    },
+    {
+      "id": "m1-w4-q012",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "Why should `set -e` not be treated as a complete error-handling strategy",
+      "type": "scenario",
+      "question": "Why should `set -e` not be treated as a complete error-handling strategy?",
+      "options": [
+        "It never changes script behavior",
+        "It automatically fixes failed commands",
+        "It prevents every possible runtime error",
+        "It has context-dependent exceptions and does not replace explicit checks for important operations"
+      ],
+      "correct_answer": "It has context-dependent exceptions and does not replace explicit checks for important operations",
+      "correct_option_index": 3,
+      "explanation": "`set -e` exits in many unhandled failure cases, but shell semantics include exceptions; critical operations still need deliberate checks.",
+      "distractor_feedback": {
+        "It never changes script behavior": "It does affect exit behavior.",
+        "It automatically fixes failed commands": "It does not repair commands.",
+        "It prevents every possible runtime error": "No single shell option prevents every runtime error."
+      }
+    },
+    {
+      "id": "m1-w4-q013",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "What is cron used for",
+      "type": "foundational",
+      "question": "What is cron used for?",
+      "options": [
+        "Scheduling commands or scripts to run automatically at specified times",
+        "Tracking Git commits",
+        "Managing file permissions",
+        "Allocating cloud IP addresses"
+      ],
+      "correct_answer": "Scheduling commands or scripts to run automatically at specified times",
+      "correct_option_index": 0,
+      "explanation": "Cron is a time-based job scheduler commonly used for recurring tasks.",
+      "distractor_feedback": {
+        "Tracking Git commits": "Git tracks source changes.",
+        "Managing file permissions": "Permissions are managed with chmod/chown and related controls.",
+        "Allocating cloud IP addresses": "IP allocation is a networking function."
+      }
+    },
+    {
+      "id": "m1-w4-q014",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "In a five-field cron expression, what does the first field represent",
+      "type": "command_or_practical",
+      "question": "In a five-field cron expression, what does the first field represent?",
+      "options": [
+        "Month",
+        "Minute",
+        "Hour",
+        "Day of month"
+      ],
+      "correct_answer": "Minute",
+      "correct_option_index": 1,
+      "explanation": "The common five-field cron format is minute, hour, day of month, month, day of week.",
+      "distractor_feedback": {
+        "Month": "Month is the fourth field.",
+        "Hour": "Hour is the second field.",
+        "Day of month": "Day of month is the third field."
+      }
+    },
+    {
+      "id": "m1-w4-q015",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "What schedule does `*/5 * * * *` express in standard cron",
+      "type": "scenario",
+      "question": "What schedule does `*/5 * * * *` express in standard cron?",
+      "options": [
+        "At five minutes past midnight only",
+        "Every five days",
+        "Every five minutes",
+        "Every five hours"
+      ],
+      "correct_answer": "Every five minutes",
+      "correct_option_index": 2,
+      "explanation": "The step expression `*/5` in the minute field means minute values at five-minute intervals, every hour and day.",
+      "distractor_feedback": {
+        "At five minutes past midnight only": "That would be `5 0 * * *`.",
+        "Every five days": "The expression runs many times per day, not every five days.",
+        "Every five hours": "The first field is minutes, not hours."
+      }
+    },
+    {
+      "id": "m1-w4-q016",
+      "section_id": "M1-W4",
+      "section": "M1 Week 4 — Bash Scripting, Automation and Cron",
+      "topic": "A cron job works manually but fails under cron. What is a sensible first troubleshooting s",
+      "type": "application",
+      "question": "A cron job works manually but fails under cron. What is a sensible first troubleshooting step?",
+      "options": [
+        "Assume cron is broken and reinstall Linux",
+        "Add more asterisks to the schedule",
+        "Remove all file permissions",
+        "Use absolute paths and check the cron environment, permissions and job logs"
+      ],
+      "correct_answer": "Use absolute paths and check the cron environment, permissions and job logs",
+      "correct_option_index": 3,
+      "explanation": "Cron often runs with a limited environment and different working directory; absolute paths, permissions and logs help isolate the issue.",
+      "distractor_feedback": {
+        "Assume cron is broken and reinstall Linux": "Reinstalling Linux is disproportionate and unsupported by the evidence.",
+        "Add more asterisks to the schedule": "Changing the schedule syntax blindly does not diagnose environment problems.",
+        "Remove all file permissions": "Removing permissions prevents execution rather than fixing it."
+      }
+    },
+    {
+      "id": "m2-w1-q001",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "What is a virtual machine (VM)",
+      "type": "foundational",
+      "question": "What is a virtual machine (VM)?",
+      "options": [
+        "A software-based computer that runs an operating system and applications using virtualized resources",
+        "A physical data centre building",
+        "A Git branch",
+        "A DNS record"
+      ],
+      "correct_answer": "A software-based computer that runs an operating system and applications using virtualized resources",
+      "correct_option_index": 0,
+      "explanation": "A VM behaves like a computer with virtual CPU, memory, storage and networking allocated by a hypervisor or cloud platform.",
+      "distractor_feedback": {
+        "A physical data centre building": "A data centre is a physical facility.",
+        "A Git branch": "A Git branch is a line of source-control development.",
+        "A DNS record": "A DNS record maps names to information such as IP addresses."
+      }
+    },
+    {
+      "id": "m2-w1-q002",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "What is an instance type or machine type used to specify",
+      "type": "application",
+      "question": "What is an instance type or machine type used to specify?",
+      "options": [
+        "The VM's Git commit history",
+        "The compute resources and characteristics allocated to a VM",
+        "The user's password",
+        "The cloud account's billing address"
+      ],
+      "correct_answer": "The compute resources and characteristics allocated to a VM",
+      "correct_option_index": 1,
+      "explanation": "Machine or instance types describe combinations of CPU, memory, networking and sometimes specialized accelerators.",
+      "distractor_feedback": {
+        "The VM's Git commit history": "Git history is unrelated to VM sizing.",
+        "The user's password": "Passwords are identity credentials.",
+        "The cloud account's billing address": "Billing address is account metadata."
+      }
+    },
+    {
+      "id": "m2-w1-q003",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "What is a cloud region",
+      "type": "scenario",
+      "question": "What is a cloud region?",
+      "options": [
+        "A subnet inside every VPC",
+        "A billing invoice",
+        "A geographic area containing cloud infrastructure",
+        "A single Linux process"
+      ],
+      "correct_answer": "A geographic area containing cloud infrastructure",
+      "correct_option_index": 2,
+      "explanation": "A region is a geographic location where a provider operates cloud infrastructure and services.",
+      "distractor_feedback": {
+        "A subnet inside every VPC": "A subnet is a network segment, not a region.",
+        "A billing invoice": "An invoice is a billing document.",
+        "A single Linux process": "A process is an executing program."
+      }
+    },
+    {
+      "id": "m2-w1-q004",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "What is an Availability Zone (AZ) in a cloud region",
+      "type": "application",
+      "question": "What is an Availability Zone (AZ) in a cloud region?",
+      "options": [
+        "A user permission policy",
+        "A Git remote",
+        "A type of database query",
+        "An isolated location or grouping of data centres within that region"
+      ],
+      "correct_answer": "An isolated location or grouping of data centres within that region",
+      "correct_option_index": 3,
+      "explanation": "Availability Zones provide failure isolation within a region; distributing workloads across zones can improve resilience.",
+      "distractor_feedback": {
+        "A user permission policy": "A policy controls permissions.",
+        "A Git remote": "A remote identifies another Git repository.",
+        "A type of database query": "A database query retrieves or modifies data."
+      }
+    },
+    {
+      "id": "m2-w1-q005",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "A VM is stopped but its attached persistent disk remains allocated. What is the likely bil",
+      "type": "foundational",
+      "question": "A VM is stopped but its attached persistent disk remains allocated. What is the likely billing outcome?",
+      "options": [
+        "Compute charges may stop, but the persistent disk can continue to incur storage charges",
+        "All charges always stop immediately",
+        "The disk is automatically deleted",
+        "The VM continues using full running compute capacity"
+      ],
+      "correct_answer": "Compute charges may stop, but the persistent disk can continue to incur storage charges",
+      "correct_option_index": 0,
+      "explanation": "Stopping a VM usually releases billable running compute, but persistent storage and other attached resources may still be billed.",
+      "distractor_feedback": {
+        "All charges always stop immediately": "Storage can remain billable.",
+        "The disk is automatically deleted": "Stopping does not necessarily delete persistent disks.",
+        "The VM continues using full running compute capacity": "A stopped VM is not consuming running compute in the same way as a running VM."
+      }
+    },
+    {
+      "id": "m2-w1-q006",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "What does IAM stand for in cloud security",
+      "type": "scenario",
+      "question": "What does IAM stand for in cloud security?",
+      "options": [
+        "Internal Application Monitoring",
+        "Identity and Access Management",
+        "Instance Automation Module",
+        "Internet Address Mapping"
+      ],
+      "correct_answer": "Identity and Access Management",
+      "correct_option_index": 1,
+      "explanation": "IAM manages identities and the permissions they receive to access cloud resources.",
+      "distractor_feedback": {
+        "Internal Application Monitoring": "Monitoring is not the meaning of IAM.",
+        "Instance Automation Module": "This is not the standard expansion.",
+        "Internet Address Mapping": "IP addressing is a networking topic."
+      }
+    },
+    {
+      "id": "m2-w1-q007",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "What does the principle of least privilege require",
+      "type": "application",
+      "question": "What does the principle of least privilege require?",
+      "options": [
+        "Sharing one root credential across a team",
+        "Allowing all network traffic by default",
+        "Granting only the permissions needed for a task",
+        "Giving every user administrator access"
+      ],
+      "correct_answer": "Granting only the permissions needed for a task",
+      "correct_option_index": 2,
+      "explanation": "Least privilege reduces risk by limiting identities to the minimum permissions required for their responsibilities.",
+      "distractor_feedback": {
+        "Sharing one root credential across a team": "Shared credentials undermine accountability and security.",
+        "Allowing all network traffic by default": "Open network access is not least privilege.",
+        "Giving every user administrator access": "Administrator access for everyone violates least privilege."
+      }
+    },
+    {
+      "id": "m2-w1-q008",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "Why use an IAM role for an application running on a VM",
+      "type": "application",
+      "question": "Why use an IAM role for an application running on a VM?",
+      "options": [
+        "To give the application a public IP address",
+        "To increase the VM's CPU count",
+        "To store application logs permanently",
+        "To provide temporary, scoped permissions without embedding long-lived credentials in code"
+      ],
+      "correct_answer": "To provide temporary, scoped permissions without embedding long-lived credentials in code",
+      "correct_option_index": 3,
+      "explanation": "Roles provide workload identities and temporary credentials, reducing the need to hard-code access keys.",
+      "distractor_feedback": {
+        "To give the application a public IP address": "Public IP configuration is networking.",
+        "To increase the VM's CPU count": "CPU sizing is compute configuration.",
+        "To store application logs permanently": "Log retention is a storage/monitoring concern."
+      }
+    },
+    {
+      "id": "m2-w1-q009",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "A script only needs permission to read objects from one storage bucket. Which policy desig",
+      "type": "foundational",
+      "question": "A script only needs permission to read objects from one storage bucket. Which policy design is safest?",
+      "options": [
+        "Allow the required read action on that specific bucket or its objects",
+        "Grant full administrator access to the entire account",
+        "Allow all actions on all resources",
+        "Use another employee's credentials"
+      ],
+      "correct_answer": "Allow the required read action on that specific bucket or its objects",
+      "correct_option_index": 0,
+      "explanation": "A narrowly scoped policy limits both the actions and resources available to the script.",
+      "distractor_feedback": {
+        "Grant full administrator access to the entire account": "Administrator access is excessive.",
+        "Allow all actions on all resources": "Wildcard actions and resources are broader than necessary.",
+        "Use another employee's credentials": "Using another person's credentials harms security and auditability."
+      }
+    },
+    {
+      "id": "m2-w1-q010",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "What is the difference between authentication and authorization",
+      "type": "application",
+      "question": "What is the difference between authentication and authorization?",
+      "options": [
+        "Authorization proves a person's identity",
+        "Authentication verifies identity; authorization determines what that identity may do",
+        "They are identical concepts",
+        "Authentication grants every permission automatically"
+      ],
+      "correct_answer": "Authentication verifies identity; authorization determines what that identity may do",
+      "correct_option_index": 1,
+      "explanation": "Authentication answers who or what is requesting access; authorization evaluates allowed actions.",
+      "distractor_feedback": {
+        "Authorization proves a person's identity": "Identity proof is authentication.",
+        "They are identical concepts": "They are related but distinct.",
+        "Authentication grants every permission automatically": "Successful authentication does not imply unrestricted permissions."
+      }
+    },
+    {
+      "id": "m2-w1-q011",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "Why should a cloud VM's inbound management port be restricted to trusted source IPs or a b",
+      "type": "application",
+      "question": "Why should a cloud VM's inbound management port be restricted to trusted source IPs or a bastion?",
+      "options": [
+        "To improve Git merge performance",
+        "To remove the need for identity controls",
+        "To reduce exposure to unsolicited connection attempts from the internet",
+        "To make the VM's disk larger"
+      ],
+      "correct_answer": "To reduce exposure to unsolicited connection attempts from the internet",
+      "correct_option_index": 2,
+      "explanation": "Restricting management access reduces the attack surface; network controls complement authentication and patching.",
+      "distractor_feedback": {
+        "To improve Git merge performance": "Git performance is unrelated.",
+        "To remove the need for identity controls": "Network restrictions do not replace identity controls.",
+        "To make the VM's disk larger": "Disk size is unrelated."
+      }
+    },
+    {
+      "id": "m2-w1-q012",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "What is the purpose of a budget alert",
+      "type": "scenario",
+      "question": "What is the purpose of a budget alert?",
+      "options": [
+        "To guarantee the account cannot spend more",
+        "To automatically make every resource free",
+        "To replace resource tagging",
+        "To notify an operator when spending reaches configured thresholds or forecasts"
+      ],
+      "correct_answer": "To notify an operator when spending reaches configured thresholds or forecasts",
+      "correct_option_index": 3,
+      "explanation": "Budget alerts provide visibility when actual or forecast spending approaches a chosen limit; they do not always stop usage.",
+      "distractor_feedback": {
+        "To guarantee the account cannot spend more": "An alert is not necessarily a hard spending cap.",
+        "To automatically make every resource free": "Alerts do not make services free.",
+        "To replace resource tagging": "Tagging helps allocation but does not replace alerts."
+      }
+    },
+    {
+      "id": "m2-w1-q013",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "What is a Spot or preemptible VM generally intended for",
+      "type": "foundational",
+      "question": "What is a Spot or preemptible VM generally intended for?",
+      "options": [
+        "Fault-tolerant workloads that can handle interruption in exchange for lower cost",
+        "A database that must never be interrupted",
+        "A permanent replacement for every production VM",
+        "A way to bypass IAM"
+      ],
+      "correct_answer": "Fault-tolerant workloads that can handle interruption in exchange for lower cost",
+      "correct_option_index": 0,
+      "explanation": "Discounted spare capacity can be interrupted by the provider, so it suits flexible batch or fault-tolerant workloads.",
+      "distractor_feedback": {
+        "A database that must never be interrupted": "A workload requiring uninterrupted availability is a poor fit.",
+        "A permanent replacement for every production VM": "It is not a universal replacement for standard instances.",
+        "A way to bypass IAM": "Pricing models do not bypass access controls."
+      }
+    },
+    {
+      "id": "m2-w1-q014",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "A VM fails a health check after launch. What should an engineer inspect first",
+      "type": "application",
+      "question": "A VM fails a health check after launch. What should an engineer inspect first?",
+      "options": [
+        "Disable all security controls",
+        "Instance state, boot/system logs, health checks, network rules and recent configuration",
+        "Immediately delete the cloud account",
+        "Change the VM's name repeatedly"
+      ],
+      "correct_answer": "Instance state, boot/system logs, health checks, network rules and recent configuration",
+      "correct_option_index": 1,
+      "explanation": "Systematic troubleshooting starts with observable state and logs, then checks configuration and connectivity.",
+      "distractor_feedback": {
+        "Disable all security controls": "Disabling controls creates risk and may not fix the cause.",
+        "Immediately delete the cloud account": "Deleting the account is destructive and irrelevant.",
+        "Change the VM's name repeatedly": "Renaming does not address boot or health issues."
+      }
+    },
+    {
+      "id": "m2-w1-q015",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "Why distribute critical application instances across multiple AZs",
+      "type": "scenario",
+      "question": "Why distribute critical application instances across multiple AZs?",
+      "options": [
+        "To guarantee that no software bugs occur",
+        "To avoid needing backups",
+        "To reduce dependence on one isolated location and improve availability during a zone failure",
+        "To make every instance share one disk"
+      ],
+      "correct_answer": "To reduce dependence on one isolated location and improve availability during a zone failure",
+      "correct_option_index": 2,
+      "explanation": "Multi-AZ design can keep service available when one zone has an outage, assuming the application and data layers are designed accordingly.",
+      "distractor_feedback": {
+        "To guarantee that no software bugs occur": "Redundancy does not prevent software bugs.",
+        "To avoid needing backups": "High availability is not a substitute for backups.",
+        "To make every instance share one disk": "Instances do not automatically share a single disk."
+      }
+    },
+    {
+      "id": "m2-w1-q016",
+      "section_id": "M2-W1",
+      "section": "M2 Week 1 — Core Compute and IAM",
+      "topic": "What should an engineer check before selecting a VM size",
+      "type": "application",
+      "question": "What should an engineer check before selecting a VM size?",
+      "options": [
+        "Only the VM's display name",
+        "The number of GitHub stars in the project",
+        "The colour of the cloud console",
+        "Workload CPU, memory, storage, network needs and cost constraints"
+      ],
+      "correct_answer": "Workload CPU, memory, storage, network needs and cost constraints",
+      "correct_option_index": 3,
+      "explanation": "Sizing should reflect workload requirements and budget, then be monitored and adjusted using actual performance data.",
+      "distractor_feedback": {
+        "Only the VM's display name": "A display name says little about resource needs.",
+        "The number of GitHub stars in the project": "Repository popularity does not determine compute requirements.",
+        "The colour of the cloud console": "Console appearance is irrelevant."
+      }
+    },
+    {
+      "id": "m2-w2-q001",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "What is a VPC",
+      "type": "foundational",
+      "question": "What is a VPC?",
+      "options": [
+        "A logically isolated virtual network in a cloud environment",
+        "A virtual machine image",
+        "A Linux user group",
+        "A Git repository"
+      ],
+      "correct_answer": "A logically isolated virtual network in a cloud environment",
+      "correct_option_index": 0,
+      "explanation": "A VPC provides a logically isolated network space in which cloud resources can be placed and connected.",
+      "distractor_feedback": {
+        "A virtual machine image": "A machine image is a template for launching compute.",
+        "A Linux user group": "A Linux group organizes user permissions.",
+        "A Git repository": "A Git repository tracks files and history."
+      }
+    },
+    {
+      "id": "m2-w2-q002",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "What does CIDR notation describe",
+      "type": "application",
+      "question": "What does CIDR notation describe?",
+      "options": [
+        "A database password policy",
+        "An IP network range and its prefix length",
+        "A VM's CPU architecture",
+        "A Git branch name"
+      ],
+      "correct_answer": "An IP network range and its prefix length",
+      "correct_option_index": 1,
+      "explanation": "CIDR notation such as 10.0.0.0/24 identifies a network block and how many leading bits define the network.",
+      "distractor_feedback": {
+        "A database password policy": "Password policies govern credentials.",
+        "A VM's CPU architecture": "CPU architecture describes processor instruction sets.",
+        "A Git branch name": "Branch names identify source-control branches."
+      }
+    },
+    {
+      "id": "m2-w2-q003",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "How many total IPv4 addresses are represented by a /24 block",
+      "type": "scenario",
+      "question": "How many total IPv4 addresses are represented by a /24 block?",
+      "options": [
+        "32",
+        "128",
+        "256",
+        "24"
+      ],
+      "correct_answer": "256",
+      "correct_option_index": 2,
+      "explanation": "IPv4 has 32 bits; a /24 leaves 8 host bits, so 2^8 equals 256 total addresses.",
+      "distractor_feedback": {
+        "32": "32 is the number of IPv4 bits.",
+        "128": "128 is half of 256.",
+        "24": "24 is the prefix length, not the address count."
+      }
+    },
+    {
+      "id": "m2-w2-q004",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "If a CIDR prefix changes from /24 to /25, what happens to the address block size",
+      "type": "application",
+      "question": "If a CIDR prefix changes from /24 to /25, what happens to the address block size?",
+      "options": [
+        "It doubles",
+        "It remains exactly the same",
+        "It becomes 24 addresses",
+        "It is halved"
+      ],
+      "correct_answer": "It is halved",
+      "correct_option_index": 3,
+      "explanation": "Increasing the prefix by one bit leaves one fewer host bit, halving the total address count.",
+      "distractor_feedback": {
+        "It doubles": "A smaller prefix, such as /23, doubles the block size.",
+        "It remains exactly the same": "The block size changes with the prefix.",
+        "It becomes 24 addresses": "The total count is a power of two, not 24."
+      }
+    },
+    {
+      "id": "m2-w2-q005",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "What makes a subnet public in a typical AWS VPC design",
+      "type": "foundational",
+      "question": "What makes a subnet public in a typical AWS VPC design?",
+      "options": [
+        "Its associated route table has a route to an Internet Gateway",
+        "Its name contains the word public",
+        "It contains only Linux servers",
+        "It has a security group attached"
+      ],
+      "correct_answer": "Its associated route table has a route to an Internet Gateway",
+      "correct_option_index": 0,
+      "explanation": "A subnet is considered public when its route table directs internet-bound traffic to an Internet Gateway; instances also need suitable addressing and rules.",
+      "distractor_feedback": {
+        "Its name contains the word public": "Names do not determine routing behavior.",
+        "It contains only Linux servers": "Operating system choice is irrelevant.",
+        "It has a security group attached": "Security groups are attached to resources and do not alone make a subnet public."
+      }
+    },
+    {
+      "id": "m2-w2-q006",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "What is the role of an Internet Gateway (IGW)",
+      "type": "scenario",
+      "question": "What is the role of an Internet Gateway (IGW)?",
+      "options": [
+        "It replaces every security group",
+        "It enables communication between a VPC and the internet when routing and addressing are configured",
+        "It assigns Linux file permissions",
+        "It stores database backups"
+      ],
+      "correct_answer": "It enables communication between a VPC and the internet when routing and addressing are configured",
+      "correct_option_index": 1,
+      "explanation": "An IGW is a VPC component that provides a path between the VPC and the internet, subject to routes, addresses and security rules.",
+      "distractor_feedback": {
+        "It replaces every security group": "Security groups remain separate stateful controls.",
+        "It assigns Linux file permissions": "File permissions are an OS function.",
+        "It stores database backups": "Backups require storage/backup services."
+      }
+    },
+    {
+      "id": "m2-w2-q007",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "A private subnet has no direct route to an Internet Gateway. What does that imply",
+      "type": "application",
+      "question": "A private subnet has no direct route to an Internet Gateway. What does that imply?",
+      "options": [
+        "Instances can never download updates",
+        "The subnet has no IP addresses",
+        "Instances in it are not directly reachable from the public internet through that route",
+        "Instances cannot communicate with anything"
+      ],
+      "correct_answer": "Instances in it are not directly reachable from the public internet through that route",
+      "correct_option_index": 2,
+      "explanation": "A private subnet lacks a direct IGW route, but it may still communicate within the VPC or use controlled egress such as NAT or endpoints.",
+      "distractor_feedback": {
+        "Instances can never download updates": "NAT or VPC endpoints may provide update/service access.",
+        "The subnet has no IP addresses": "Subnets contain IP address ranges.",
+        "Instances cannot communicate with anything": "Private resources can communicate over permitted internal routes."
+      }
+    },
+    {
+      "id": "m2-w2-q008",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "What is a NAT Gateway commonly used for",
+      "type": "application",
+      "question": "What is a NAT Gateway commonly used for?",
+      "options": [
+        "Making every private instance publicly addressable",
+        "Replacing IAM roles",
+        "Routing traffic between Git branches",
+        "Allowing resources in private subnets to initiate outbound internet connections without accepting unsolicited inbound internet connections"
+      ],
+      "correct_answer": "Allowing resources in private subnets to initiate outbound internet connections without accepting unsolicited inbound internet connections",
+      "correct_option_index": 3,
+      "explanation": "NAT provides outbound connectivity for private resources while not exposing them as directly internet-addressable hosts.",
+      "distractor_feedback": {
+        "Making every private instance publicly addressable": "A NAT Gateway does not assign public addresses to every private instance.",
+        "Replacing IAM roles": "IAM handles identity and permissions.",
+        "Routing traffic between Git branches": "Git branches are unrelated."
+      }
+    },
+    {
+      "id": "m2-w2-q009",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "What is a security group in AWS",
+      "type": "foundational",
+      "question": "What is a security group in AWS?",
+      "options": [
+        "A stateful virtual firewall associated with network interfaces or resources",
+        "A stateless subnet route table",
+        "A Linux user account",
+        "A DNS hosting zone"
+      ],
+      "correct_answer": "A stateful virtual firewall associated with network interfaces or resources",
+      "correct_option_index": 0,
+      "explanation": "Security groups control inbound and outbound traffic and are stateful, so response traffic for allowed connections is permitted.",
+      "distractor_feedback": {
+        "A stateless subnet route table": "Network ACLs are stateless subnet-level controls; route tables determine paths.",
+        "A Linux user account": "Linux users are operating-system identities.",
+        "A DNS hosting zone": "DNS zones hold name records."
+      }
+    },
+    {
+      "id": "m2-w2-q010",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "What is a key characteristic of a network ACL (NACL)",
+      "type": "application",
+      "question": "What is a key characteristic of a network ACL (NACL)?",
+      "options": [
+        "It grants IAM permissions",
+        "It is a stateless filter applied at the subnet boundary",
+        "It is stateful and attached only to one process",
+        "It replaces route tables"
+      ],
+      "correct_answer": "It is a stateless filter applied at the subnet boundary",
+      "correct_option_index": 1,
+      "explanation": "NACLs evaluate inbound and outbound traffic separately and are stateless; return traffic must be allowed by the relevant rules.",
+      "distractor_feedback": {
+        "It grants IAM permissions": "IAM permissions are identity-based, not NACL rules.",
+        "It is stateful and attached only to one process": "Security groups are stateful and associated with resources/network interfaces.",
+        "It replaces route tables": "Route tables and NACLs have different functions."
+      }
+    },
+    {
+      "id": "m2-w2-q011",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "A web server must accept HTTP traffic from the internet. Which control must permit inbound",
+      "type": "application",
+      "question": "A web server must accept HTTP traffic from the internet. Which control must permit inbound TCP port 80?",
+      "options": [
+        "The Linux package manager",
+        "The IAM password policy only",
+        "The relevant network security rules, such as its security group and any applicable NACL",
+        "The Git remote configuration"
+      ],
+      "correct_answer": "The relevant network security rules, such as its security group and any applicable NACL",
+      "correct_option_index": 2,
+      "explanation": "The network path must permit TCP 80 through applicable security controls; the web service must also be listening.",
+      "distractor_feedback": {
+        "The Linux package manager": "Package managers install software but do not open network ports.",
+        "The IAM password policy only": "Password policies do not permit TCP traffic.",
+        "The Git remote configuration": "Git remotes do not control network traffic."
+      }
+    },
+    {
+      "id": "m2-w2-q012",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "Why is a bastion host used",
+      "type": "scenario",
+      "question": "Why is a bastion host used?",
+      "options": [
+        "It stores all production database records",
+        "It makes every private instance public",
+        "It replaces SSH authentication",
+        "It provides a controlled intermediate host through which administrators access private instances"
+      ],
+      "correct_answer": "It provides a controlled intermediate host through which administrators access private instances",
+      "correct_option_index": 3,
+      "explanation": "A bastion host is a hardened jump point in a public network segment, allowing controlled administration of private resources.",
+      "distractor_feedback": {
+        "It stores all production database records": "Database storage is a separate service.",
+        "It makes every private instance public": "Private instances can remain private behind the bastion.",
+        "It replaces SSH authentication": "SSH keys or other authentication are still required."
+      }
+    },
+    {
+      "id": "m2-w2-q013",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "An engineer can SSH to a bastion but not to a private VM through it. Which check is especi",
+      "type": "foundational",
+      "question": "An engineer can SSH to a bastion but not to a private VM through it. Which check is especially relevant?",
+      "options": [
+        "Whether the private VM's security group allows SSH from the bastion's security group and routing permits the path",
+        "Whether the private VM has a public DNS name",
+        "Whether the engineer's Git commit message is valid",
+        "Whether the bastion's desktop wallpaper is set"
+      ],
+      "correct_answer": "Whether the private VM's security group allows SSH from the bastion's security group and routing permits the path",
+      "correct_option_index": 0,
+      "explanation": "The private instance should permit SSH from the bastion's trusted identity/network source, and both hosts need a valid network path.",
+      "distractor_feedback": {
+        "Whether the private VM has a public DNS name": "A private VM does not need a public DNS name for private-address access.",
+        "Whether the engineer's Git commit message is valid": "Commit messages do not affect SSH connectivity.",
+        "Whether the bastion's desktop wallpaper is set": "Wallpaper is irrelevant."
+      }
+    },
+    {
+      "id": "m2-w2-q014",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "What is the purpose of a route table",
+      "type": "application",
+      "question": "What is the purpose of a route table?",
+      "options": [
+        "It records Git commit authors",
+        "It determines where network traffic is directed based on destination ranges",
+        "It stores Linux passwords",
+        "It defines CPU scheduling priority"
+      ],
+      "correct_answer": "It determines where network traffic is directed based on destination ranges",
+      "correct_option_index": 1,
+      "explanation": "Route tables contain destination and target entries that guide traffic through gateways or other network targets.",
+      "distractor_feedback": {
+        "It records Git commit authors": "Git stores commit metadata.",
+        "It stores Linux passwords": "Passwords belong in secure identity stores.",
+        "It defines CPU scheduling priority": "CPU scheduling is an OS function."
+      }
+    },
+    {
+      "id": "m2-w2-q015",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "Why should a VPC's CIDR ranges be planned carefully",
+      "type": "scenario",
+      "question": "Why should a VPC's CIDR ranges be planned carefully?",
+      "options": [
+        "A CIDR block controls Git merge behavior",
+        "Every VPC must use the same range",
+        "Overlapping ranges can make routing and connectivity between networks difficult",
+        "CIDR ranges determine the VM's username"
+      ],
+      "correct_answer": "Overlapping ranges can make routing and connectivity between networks difficult",
+      "correct_option_index": 2,
+      "explanation": "Overlapping IP ranges can cause ambiguous routes and complicate peering, VPNs and network integration.",
+      "distractor_feedback": {
+        "A CIDR block controls Git merge behavior": "Git behavior is unrelated.",
+        "Every VPC must use the same range": "VPCs can use different non-overlapping private ranges.",
+        "CIDR ranges determine the VM's username": "Usernames are unrelated to network ranges."
+      }
+    },
+    {
+      "id": "m2-w2-q016",
+      "section_id": "M2-W2",
+      "section": "M2 Week 2 — Cloud Networking, VPCs and Security",
+      "topic": "A web instance has a public IP and an IGW route, but the site is unreachable. What should ",
+      "type": "application",
+      "question": "A web instance has a public IP and an IGW route, but the site is unreachable. What should be checked?",
+      "options": [
+        "Only the instance's display name",
+        "Only the Git branch count",
+        "Whether the user has installed a text editor",
+        "The service is running/listening, host firewall, security-group/NACL rules and route configuration"
+      ],
+      "correct_answer": "The service is running/listening, host firewall, security-group/NACL rules and route configuration",
+      "correct_option_index": 3,
+      "explanation": "Internet reachability depends on the network path and on the application listening on the expected port; check each layer.",
+      "distractor_feedback": {
+        "Only the instance's display name": "Display names do not establish connectivity.",
+        "Only the Git branch count": "Branch count is unrelated.",
+        "Whether the user has installed a text editor": "A text editor does not determine whether the web server is reachable."
+      }
+    },
+    {
+      "id": "m2-w3-q001",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "What is a database used for",
+      "type": "foundational",
+      "question": "What is a database used for?",
+      "options": [
+        "Organised storage, retrieval and management of data",
+        "Scheduling Linux cron jobs",
+        "Assigning public IP addresses",
+        "Tracking Git branches"
+      ],
+      "correct_answer": "Organised storage, retrieval and management of data",
+      "correct_option_index": 0,
+      "explanation": "Databases provide structured or flexible mechanisms for storing, querying and updating application data.",
+      "distractor_feedback": {
+        "Scheduling Linux cron jobs": "Cron schedules tasks.",
+        "Assigning public IP addresses": "IP assignment is networking.",
+        "Tracking Git branches": "Git tracks source history."
+      }
+    },
+    {
+      "id": "m2-w3-q002",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "What is a common characteristic of a relational database",
+      "type": "application",
+      "question": "What is a common characteristic of a relational database?",
+      "options": [
+        "It never supports transactions",
+        "Data is organised into tables with defined relationships and commonly queried using SQL",
+        "It cannot enforce relationships",
+        "It stores only images"
+      ],
+      "correct_answer": "Data is organised into tables with defined relationships and commonly queried using SQL",
+      "correct_option_index": 1,
+      "explanation": "Relational databases use tables, schemas, keys and SQL; many support transactional guarantees.",
+      "distractor_feedback": {
+        "It never supports transactions": "Transactions are widely supported in relational systems.",
+        "It cannot enforce relationships": "Relationships are a central relational concept.",
+        "It stores only images": "Relational databases can store many data types, not only images."
+      }
+    },
+    {
+      "id": "m2-w3-q003",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "What is a primary key used for",
+      "type": "scenario",
+      "question": "What is a primary key used for?",
+      "options": [
+        "Creating a public subnet",
+        "Scheduling database backups by itself",
+        "Uniquely identifying a row in a table",
+        "Encrypting the whole database automatically"
+      ],
+      "correct_answer": "Uniquely identifying a row in a table",
+      "correct_option_index": 2,
+      "explanation": "A primary key uniquely identifies each row and is commonly referenced by foreign keys.",
+      "distractor_feedback": {
+        "Creating a public subnet": "Subnets are networking resources.",
+        "Scheduling database backups by itself": "Backup scheduling is a separate operational feature.",
+        "Encrypting the whole database automatically": "Encryption requires separate database/security configuration."
+      }
+    },
+    {
+      "id": "m2-w3-q004",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "What is a foreign key used for",
+      "type": "application",
+      "question": "What is a foreign key used for?",
+      "options": [
+        "Making a database publicly accessible",
+        "Replacing every index",
+        "Storing the database administrator's password",
+        "Representing a relationship by referencing a key in another or the same table"
+      ],
+      "correct_answer": "Representing a relationship by referencing a key in another or the same table",
+      "correct_option_index": 3,
+      "explanation": "A foreign key enforces or represents referential relationships between records.",
+      "distractor_feedback": {
+        "Making a database publicly accessible": "Public accessibility is a network/security configuration.",
+        "Replacing every index": "Indexes support query performance and are not universally replaced by foreign keys.",
+        "Storing the database administrator's password": "Passwords should be handled securely and are not the purpose of foreign keys."
+      }
+    },
+    {
+      "id": "m2-w3-q005",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "Which statement best describes NoSQL databases",
+      "type": "foundational",
+      "question": "Which statement best describes NoSQL databases?",
+      "options": [
+        "A broad category of non-relational data stores with models such as key-value, document, graph or wide-column",
+        "A single database product with one fixed schema",
+        "Databases that cannot scale",
+        "Databases that never store structured data"
+      ],
+      "correct_answer": "A broad category of non-relational data stores with models such as key-value, document, graph or wide-column",
+      "correct_option_index": 0,
+      "explanation": "NoSQL refers to several data models and design approaches; capabilities and tradeoffs vary by product.",
+      "distractor_feedback": {
+        "A single database product with one fixed schema": "NoSQL is a category, not one product or fixed schema.",
+        "Databases that cannot scale": "Many NoSQL systems are designed for distributed scale, though tradeoffs vary.",
+        "Databases that never store structured data": "NoSQL systems can store structured or semi-structured data."
+      }
+    },
+    {
+      "id": "m2-w3-q006",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "When might a relational database be a good fit",
+      "type": "scenario",
+      "question": "When might a relational database be a good fit?",
+      "options": [
+        "When the only requirement is running shell scripts",
+        "When the application benefits from structured relationships, constraints and transactions",
+        "When no data needs to be stored",
+        "When every record must be unrelated"
+      ],
+      "correct_answer": "When the application benefits from structured relationships, constraints and transactions",
+      "correct_option_index": 1,
+      "explanation": "Relational databases are often suitable for structured data and applications needing joins, constraints and transactional behavior.",
+      "distractor_feedback": {
+        "When the only requirement is running shell scripts": "Shell scripting is not a database selection criterion.",
+        "When no data needs to be stored": "A database is unnecessary if no data is stored.",
+        "When every record must be unrelated": "Relational models are specifically useful for relationships."
+      }
+    },
+    {
+      "id": "m2-w3-q007",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "What does a managed database service typically provide",
+      "type": "application",
+      "question": "What does a managed database service typically provide?",
+      "options": [
+        "The provider writes every application query",
+        "The database becomes immune to failure",
+        "The cloud provider handles much of the underlying database infrastructure and routine operations",
+        "The customer never needs to manage access or data"
+      ],
+      "correct_answer": "The cloud provider handles much of the underlying database infrastructure and routine operations",
+      "correct_option_index": 2,
+      "explanation": "Managed services can simplify provisioning, patching, backups and availability operations, but customers still manage data, access and application design.",
+      "distractor_feedback": {
+        "The provider writes every application query": "Application developers still write queries and application logic.",
+        "The database becomes immune to failure": "Managed services can still experience failures and require resilience planning.",
+        "The customer never needs to manage access or data": "Customers remain responsible for access controls and data governance."
+      }
+    },
+    {
+      "id": "m2-w3-q008",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "Why place a database in a private subnet in a typical web application architecture",
+      "type": "application",
+      "question": "Why place a database in a private subnet in a typical web application architecture?",
+      "options": [
+        "To make the database impossible for the application to reach",
+        "To remove the need for authentication",
+        "To guarantee unlimited storage",
+        "To avoid exposing the database directly to the public internet"
+      ],
+      "correct_answer": "To avoid exposing the database directly to the public internet",
+      "correct_option_index": 3,
+      "explanation": "Private placement reduces direct internet exposure while the application tier can access the database through controlled internal networking.",
+      "distractor_feedback": {
+        "To make the database impossible for the application to reach": "The application can reach it through permitted private routes and rules.",
+        "To remove the need for authentication": "Database authentication and authorization are still needed.",
+        "To guarantee unlimited storage": "Storage remains limited and billable."
+      }
+    },
+    {
+      "id": "m2-w3-q009",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "What is serverless computing",
+      "type": "foundational",
+      "question": "What is serverless computing?",
+      "options": [
+        "A model where the provider manages the underlying server infrastructure and users focus on code or services",
+        "A model where no physical servers exist anywhere",
+        "A way to run code without any permissions",
+        "A guarantee that applications have zero latency"
+      ],
+      "correct_answer": "A model where the provider manages the underlying server infrastructure and users focus on code or services",
+      "correct_option_index": 0,
+      "explanation": "Serverless abstracts server management; servers still exist and the provider operates them.",
+      "distractor_feedback": {
+        "A model where no physical servers exist anywhere": "Servers still run the workloads behind the abstraction.",
+        "A way to run code without any permissions": "Permissions and security still matter.",
+        "A guarantee that applications have zero latency": "Cold starts and network latency can still occur."
+      }
+    },
+    {
+      "id": "m2-w3-q010",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "What commonly triggers a serverless function",
+      "type": "application",
+      "question": "What commonly triggers a serverless function?",
+      "options": [
+        "A change to a Linux desktop wallpaper",
+        "An event such as an HTTP request, file upload, message or scheduled event",
+        "Only a person physically restarting a server",
+        "A Git merge conflict"
+      ],
+      "correct_answer": "An event such as an HTTP request, file upload, message or scheduled event",
+      "correct_option_index": 1,
+      "explanation": "Event-driven functions execute in response to configured triggers from applications or cloud services.",
+      "distractor_feedback": {
+        "A change to a Linux desktop wallpaper": "Wallpaper changes are not a typical cloud event trigger.",
+        "Only a person physically restarting a server": "Functions can run automatically without a manual server restart.",
+        "A Git merge conflict": "Git conflicts are unrelated unless explicitly wired as an event source."
+      }
+    },
+    {
+      "id": "m2-w3-q011",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "What is a possible cold-start effect in serverless computing",
+      "type": "application",
+      "question": "What is a possible cold-start effect in serverless computing?",
+      "options": [
+        "The database is automatically deleted",
+        "Every invocation is guaranteed to fail",
+        "The first invocation after an idle period may take longer while the execution environment is prepared",
+        "The function permanently loses its code"
+      ],
+      "correct_answer": "The first invocation after an idle period may take longer while the execution environment is prepared",
+      "correct_option_index": 2,
+      "explanation": "A cold start can add startup latency when the provider initializes or resumes an execution environment.",
+      "distractor_feedback": {
+        "The database is automatically deleted": "Database lifecycle is separate.",
+        "Every invocation is guaranteed to fail": "Cold starts affect latency, not guaranteed failure.",
+        "The function permanently loses its code": "The code is not normally deleted."
+      }
+    },
+    {
+      "id": "m2-w3-q012",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "What role can an API Gateway play in a serverless architecture",
+      "type": "scenario",
+      "question": "What role can an API Gateway play in a serverless architecture?",
+      "options": [
+        "It replaces the database schema",
+        "It compiles Bash scripts",
+        "It assigns file permissions to Linux users",
+        "It provides an entry point for API requests and can route them to backend functions or services"
+      ],
+      "correct_answer": "It provides an entry point for API requests and can route them to backend functions or services",
+      "correct_option_index": 3,
+      "explanation": "An API Gateway can expose and manage HTTP APIs, routing requests to serverless functions or other backends.",
+      "distractor_feedback": {
+        "It replaces the database schema": "Database schema design is separate.",
+        "It compiles Bash scripts": "Bash compilation is not its role.",
+        "It assigns file permissions to Linux users": "Linux file permissions are an OS function."
+      }
+    },
+    {
+      "id": "m2-w3-q013",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "A function should run when a new object is uploaded to cloud storage. Which design is appr",
+      "type": "foundational",
+      "question": "A function should run when a new object is uploaded to cloud storage. Which design is appropriate?",
+      "options": [
+        "Configure a storage event notification to invoke the function",
+        "Run the function only by manually SSHing into a VM",
+        "Put the object name in a Git commit message",
+        "Disable storage events and poll an unrelated database"
+      ],
+      "correct_answer": "Configure a storage event notification to invoke the function",
+      "correct_option_index": 0,
+      "explanation": "Event notifications can trigger functions when objects are created, enabling event-driven processing.",
+      "distractor_feedback": {
+        "Run the function only by manually SSHing into a VM": "Manual SSH is not event-driven and may require a VM.",
+        "Put the object name in a Git commit message": "Commit messages do not automatically trigger storage events.",
+        "Disable storage events and poll an unrelated database": "Polling an unrelated database is an unnecessary mismatch."
+      }
+    },
+    {
+      "id": "m2-w3-q014",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "Why are database backups important even when a provider offers high availability",
+      "type": "application",
+      "question": "Why are database backups important even when a provider offers high availability?",
+      "options": [
+        "Backups automatically prevent all cyberattacks",
+        "High availability helps keep a service running, while backups support recovery from deletion, corruption or other data loss",
+        "Backups are only needed when a database is public",
+        "High availability guarantees recovery from every accidental deletion"
+      ],
+      "correct_answer": "High availability helps keep a service running, while backups support recovery from deletion, corruption or other data loss",
+      "correct_option_index": 1,
+      "explanation": "Availability and recoverability solve different problems; backups provide restore points for logical or accidental data loss.",
+      "distractor_feedback": {
+        "Backups automatically prevent all cyberattacks": "Backups do not prevent attacks; they can aid recovery.",
+        "Backups are only needed when a database is public": "Private databases also need backups.",
+        "High availability guarantees recovery from every accidental deletion": "Replication can replicate accidental deletion or corruption."
+      }
+    },
+    {
+      "id": "m2-w3-q015",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "Which is a sensible way to protect database credentials used by an application",
+      "type": "scenario",
+      "question": "Which is a sensible way to protect database credentials used by an application?",
+      "options": [
+        "Share one password in a public chat",
+        "Use the database name as the password",
+        "Store them in a secrets-management service or secure configuration mechanism with restricted access",
+        "Hard-code them in a public Git repository"
+      ],
+      "correct_answer": "Store them in a secrets-management service or secure configuration mechanism with restricted access",
+      "correct_option_index": 2,
+      "explanation": "Secrets management and least-privilege access reduce credential exposure and support rotation.",
+      "distractor_feedback": {
+        "Share one password in a public chat": "Public chat is not a secure secret store.",
+        "Use the database name as the password": "Database names are not secure passwords.",
+        "Hard-code them in a public Git repository": "Public repositories expose credentials to others."
+      }
+    },
+    {
+      "id": "m2-w3-q016",
+      "section_id": "M2-W3",
+      "section": "M2 Week 3 — Databases, Serverless and Application Services",
+      "topic": "A query becomes slow as a table grows. What should be an early diagnostic step",
+      "type": "application",
+      "question": "A query becomes slow as a table grows. What should be an early diagnostic step?",
+      "options": [
+        "Immediately migrate every table to NoSQL",
+        "Delete older records without checking requirements",
+        "Increase the web server's font size",
+        "Inspect the query plan, filters, indexes and database performance metrics"
+      ],
+      "correct_answer": "Inspect the query plan, filters, indexes and database performance metrics",
+      "correct_option_index": 3,
+      "explanation": "Query plans and metrics help identify scans, missing or ineffective indexes, poor query patterns and resource bottlenecks.",
+      "distractor_feedback": {
+        "Immediately migrate every table to NoSQL": "A migration is a major decision and may not address the cause.",
+        "Delete older records without checking requirements": "Deleting data without requirements can cause loss.",
+        "Increase the web server's font size": "Font size is unrelated to database performance."
+      }
+    },
+    {
+      "id": "m2-w4-q001",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "What is artificial intelligence (AI) in a broad sense",
+      "type": "foundational",
+      "question": "What is artificial intelligence (AI) in a broad sense?",
+      "options": [
+        "The field of building systems that perform tasks associated with capabilities such as perception, reasoning or language",
+        "A specific Linux command",
+        "A type of subnet",
+        "A guarantee that software is always correct"
+      ],
+      "correct_answer": "The field of building systems that perform tasks associated with capabilities such as perception, reasoning or language",
+      "correct_option_index": 0,
+      "explanation": "AI is a broad field covering systems that perform tasks commonly associated with human intelligence.",
+      "distractor_feedback": {
+        "A specific Linux command": "Linux commands are operating-system tools.",
+        "A type of subnet": "Subnets are networking constructs.",
+        "A guarantee that software is always correct": "AI systems can make mistakes."
+      }
+    },
+    {
+      "id": "m2-w4-q002",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "What is machine learning (ML)",
+      "type": "application",
+      "question": "What is machine learning (ML)?",
+      "options": [
+        "A method for manually hard-coding every possible answer",
+        "A subset of AI in which systems learn patterns from data to make predictions or decisions",
+        "A process that requires no data",
+        "A replacement for all software engineering"
+      ],
+      "correct_answer": "A subset of AI in which systems learn patterns from data to make predictions or decisions",
+      "correct_option_index": 1,
+      "explanation": "ML models learn patterns from examples or data rather than relying only on hand-written rules.",
+      "distractor_feedback": {
+        "A method for manually hard-coding every possible answer": "Hard-coded rules are not the defining learning approach.",
+        "A process that requires no data": "Training typically depends on data.",
+        "A replacement for all software engineering": "ML does not replace all software engineering."
+      }
+    },
+    {
+      "id": "m2-w4-q003",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "What is the main difference between predictive AI and generative AI",
+      "type": "scenario",
+      "question": "What is the main difference between predictive AI and generative AI?",
+      "options": [
+        "They are identical terms",
+        "Generative AI can only classify existing records",
+        "Predictive AI estimates outcomes or labels; generative AI creates new content such as text, images or code",
+        "Predictive AI always uses no data; generative AI always uses databases"
+      ],
+      "correct_answer": "Predictive AI estimates outcomes or labels; generative AI creates new content such as text, images or code",
+      "correct_option_index": 2,
+      "explanation": "Predictive models commonly classify or forecast, while generative models produce new outputs based on learned patterns.",
+      "distractor_feedback": {
+        "They are identical terms": "They describe different task orientations.",
+        "Generative AI can only classify existing records": "Classification is typically predictive rather than generative output.",
+        "Predictive AI always uses no data; generative AI always uses databases": "Both may use data and may use varied architectures."
+      }
+    },
+    {
+      "id": "m2-w4-q004",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "What is a large language model (LLM) primarily designed to process and generate",
+      "type": "application",
+      "question": "What is a large language model (LLM) primarily designed to process and generate?",
+      "options": [
+        "Only binary executable files",
+        "Only network packets",
+        "Only relational database indexes",
+        "Human language and other tokenised sequences such as code"
+      ],
+      "correct_answer": "Human language and other tokenised sequences such as code",
+      "correct_option_index": 3,
+      "explanation": "LLMs learn patterns in token sequences and can generate language or code-like outputs.",
+      "distractor_feedback": {
+        "Only binary executable files": "LLMs are not limited to executable binaries.",
+        "Only network packets": "Network packet routing is not their primary purpose.",
+        "Only relational database indexes": "Database indexes are a different data structure."
+      }
+    },
+    {
+      "id": "m2-w4-q005",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "What is a token in the context of an LLM",
+      "type": "foundational",
+      "question": "What is a token in the context of an LLM?",
+      "options": [
+        "A unit of text or data processed by the model, such as a word piece or punctuation",
+        "A cloud billing account",
+        "A physical CPU core",
+        "A Linux user group"
+      ],
+      "correct_answer": "A unit of text or data processed by the model, such as a word piece or punctuation",
+      "correct_option_index": 0,
+      "explanation": "Models process text as tokens; a token may be a whole word, part of a word, punctuation or another encoded unit.",
+      "distractor_feedback": {
+        "A cloud billing account": "A billing account is unrelated.",
+        "A physical CPU core": "A CPU core is hardware.",
+        "A Linux user group": "A user group is an OS identity construct."
+      }
+    },
+    {
+      "id": "m2-w4-q006",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "What does an LLM context window limit",
+      "type": "scenario",
+      "question": "What does an LLM context window limit?",
+      "options": [
+        "The number of Linux files on disk",
+        "How much input and generated content the model can consider within one interaction",
+        "The number of users allowed in an AWS account",
+        "The size of a VPC subnet"
+      ],
+      "correct_answer": "How much input and generated content the model can consider within one interaction",
+      "correct_option_index": 1,
+      "explanation": "The context window is the token capacity available for the prompt, conversation context and generated response.",
+      "distractor_feedback": {
+        "The number of Linux files on disk": "Filesystem capacity is unrelated.",
+        "The number of users allowed in an AWS account": "Cloud account user limits are separate.",
+        "The size of a VPC subnet": "Subnet size is defined by IP ranges."
+      }
+    },
+    {
+      "id": "m2-w4-q007",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "What is a hallucination in generative AI",
+      "type": "application",
+      "question": "What is a hallucination in generative AI?",
+      "options": [
+        "A cloud server reboot",
+        "A Git branch merge",
+        "An output that sounds plausible but is false, unsupported or fabricated",
+        "A verified answer with cited evidence"
+      ],
+      "correct_answer": "An output that sounds plausible but is false, unsupported or fabricated",
+      "correct_option_index": 2,
+      "explanation": "Generative models can produce confident-sounding errors, so important outputs must be checked against reliable sources.",
+      "distractor_feedback": {
+        "A cloud server reboot": "A reboot is an infrastructure operation.",
+        "A Git branch merge": "A merge combines source-control changes.",
+        "A verified answer with cited evidence": "A verified answer is not a hallucination by definition."
+      }
+    },
+    {
+      "id": "m2-w4-q008",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "Which prompt is likely to produce a more useful technical answer",
+      "type": "application",
+      "question": "Which prompt is likely to produce a more useful technical answer?",
+      "options": [
+        "Ask an ambiguous one-word question with no context",
+        "Tell the model to ignore all evidence",
+        "Request an answer without describing the problem",
+        "State the task, relevant context, constraints and the expected output format"
+      ],
+      "correct_answer": "State the task, relevant context, constraints and the expected output format",
+      "correct_option_index": 3,
+      "explanation": "Clear prompts give the model context and constraints, making the requested output easier to target and evaluate.",
+      "distractor_feedback": {
+        "Ask an ambiguous one-word question with no context": "Ambiguity makes it harder to infer the intended task.",
+        "Tell the model to ignore all evidence": "Ignoring evidence encourages unreliable output.",
+        "Request an answer without describing the problem": "Without problem details, the answer may be generic or wrong."
+      }
+    },
+    {
+      "id": "m2-w4-q009",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "Why must an engineer verify AI-generated shell commands before running them",
+      "type": "foundational",
+      "question": "Why must an engineer verify AI-generated shell commands before running them?",
+      "options": [
+        "They may be incorrect, destructive, insecure or unsuitable for the environment",
+        "AI-generated commands are always malware",
+        "The shell cannot execute commands written by AI",
+        "Verification makes Linux slower"
+      ],
+      "correct_answer": "They may be incorrect, destructive, insecure or unsuitable for the environment",
+      "correct_option_index": 0,
+      "explanation": "AI output is not inherently trustworthy; inspect commands, understand their effects and test safely before execution.",
+      "distractor_feedback": {
+        "AI-generated commands are always malware": "Not every generated command is malicious, but errors are possible.",
+        "The shell cannot execute commands written by AI": "The shell can execute valid commands regardless of who suggested them.",
+        "Verification makes Linux slower": "Verification does not inherently slow Linux."
+      }
+    },
+    {
+      "id": "m2-w4-q010",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "What is MLOps concerned with",
+      "type": "application",
+      "question": "What is MLOps concerned with?",
+      "options": [
+        "Managing GitHub passwords only",
+        "Practices for developing, deploying, monitoring and maintaining machine-learning systems",
+        "Only choosing a laptop wallpaper",
+        "Replacing all data engineering"
+      ],
+      "correct_answer": "Practices for developing, deploying, monitoring and maintaining machine-learning systems",
+      "correct_option_index": 1,
+      "explanation": "MLOps applies operational and engineering practices to the ML lifecycle, including reproducibility, deployment and monitoring.",
+      "distractor_feedback": {
+        "Managing GitHub passwords only": "Password management alone is not MLOps.",
+        "Only choosing a laptop wallpaper": "Wallpaper is unrelated.",
+        "Replacing all data engineering": "Data engineering remains important and is not replaced."
+      }
+    },
+    {
+      "id": "m2-w4-q011",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "Why is data quality important when training an ML model",
+      "type": "application",
+      "question": "Why is data quality important when training an ML model?",
+      "options": [
+        "Data quality matters only after deployment",
+        "Training data has no effect on model output",
+        "Poor or unrepresentative data can lead to inaccurate or biased model behavior",
+        "The model will always correct bad data automatically"
+      ],
+      "correct_answer": "Poor or unrepresentative data can lead to inaccurate or biased model behavior",
+      "correct_option_index": 2,
+      "explanation": "Models learn from training data; errors, missingness and unrepresentative samples can harm performance and fairness.",
+      "distractor_feedback": {
+        "Data quality matters only after deployment": "Data quality matters before and during training, as well as monitoring later.",
+        "Training data has no effect on model output": "Training data strongly influences learned patterns.",
+        "The model will always correct bad data automatically": "Models do not reliably repair bad data by themselves."
+      }
+    },
+    {
+      "id": "m2-w4-q012",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "What is model drift",
+      "type": "scenario",
+      "question": "What is model drift?",
+      "options": [
+        "A change in the model's display name",
+        "A VM moving between availability zones",
+        "A Git branch being renamed",
+        "A change in real-world data or relationships that causes model performance to degrade over time"
+      ],
+      "correct_answer": "A change in real-world data or relationships that causes model performance to degrade over time",
+      "correct_option_index": 3,
+      "explanation": "Drift can occur as input distributions or relationships change, making a previously useful model less reliable.",
+      "distractor_feedback": {
+        "A change in the model's display name": "A display-name change is not model drift.",
+        "A VM moving between availability zones": "Moving a VM is infrastructure placement.",
+        "A Git branch being renamed": "Renaming a branch is source-control administration."
+      }
+    },
+    {
+      "id": "m2-w4-q013",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "Why monitor a deployed ML model",
+      "type": "foundational",
+      "question": "Why monitor a deployed ML model?",
+      "options": [
+        "To detect changes in performance, data patterns, latency, errors and other operational signals",
+        "To ensure it never needs retraining",
+        "To remove the need for human oversight",
+        "To guarantee all predictions are correct"
+      ],
+      "correct_answer": "To detect changes in performance, data patterns, latency, errors and other operational signals",
+      "correct_option_index": 0,
+      "explanation": "Monitoring helps identify drift, service issues and quality problems so teams can investigate and respond.",
+      "distractor_feedback": {
+        "To ensure it never needs retraining": "Models may need retraining or replacement.",
+        "To remove the need for human oversight": "Human oversight may remain necessary, especially in high-impact uses.",
+        "To guarantee all predictions are correct": "Monitoring cannot guarantee perfect predictions."
+      }
+    },
+    {
+      "id": "m2-w4-q014",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "What does responsible AI emphasize",
+      "type": "application",
+      "question": "What does responsible AI emphasize?",
+      "options": [
+        "Using personal data without considering consent or law",
+        "Developing and using AI with attention to fairness, privacy, transparency, safety and accountability",
+        "Maximising automation regardless of harm",
+        "Hiding all model limitations from users"
+      ],
+      "correct_answer": "Developing and using AI with attention to fairness, privacy, transparency, safety and accountability",
+      "correct_option_index": 1,
+      "explanation": "Responsible AI considers potential harms and governance throughout design, deployment and use.",
+      "distractor_feedback": {
+        "Using personal data without considering consent or law": "Privacy, consent and legal obligations matter.",
+        "Maximising automation regardless of harm": "Automation should be evaluated against risks and impacts.",
+        "Hiding all model limitations from users": "Limitations should be communicated appropriately."
+      }
+    },
+    {
+      "id": "m2-w4-q015",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "A model performs well on average but poorly for one user group. What concern does this rai",
+      "type": "scenario",
+      "question": "A model performs well on average but poorly for one user group. What concern does this raise?",
+      "options": [
+        "A Git merge conflict",
+        "A cloud subnet routing loop",
+        "Potential bias or unequal performance across groups",
+        "A guaranteed improvement in fairness"
+      ],
+      "correct_answer": "Potential bias or unequal performance across groups",
+      "correct_option_index": 2,
+      "explanation": "Differences in model performance across groups can indicate biased data, design choices or unequal impacts and require investigation.",
+      "distractor_feedback": {
+        "A Git merge conflict": "Git conflicts concern source changes.",
+        "A cloud subnet routing loop": "Routing loops concern network paths.",
+        "A guaranteed improvement in fairness": "Unequal performance is not evidence of improved fairness."
+      }
+    },
+    {
+      "id": "m2-w4-q016",
+      "section_id": "M2-W4",
+      "section": "M2 Week 4 — Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "A team wants to deploy an AI feature that recommends actions in a high-impact workflow. Wh",
+      "type": "application",
+      "question": "A team wants to deploy an AI feature that recommends actions in a high-impact workflow. What is a responsible next step?",
+      "options": [
+        "Release immediately because the model is confident",
+        "Remove all logs and monitoring",
+        "Let the model make every decision without appeal",
+        "Evaluate accuracy, failure modes, bias, privacy, human review and clear escalation before broad release"
+      ],
+      "correct_answer": "Evaluate accuracy, failure modes, bias, privacy, human review and clear escalation before broad release",
+      "correct_option_index": 3,
+      "explanation": "High-impact AI needs careful evaluation, monitoring, accountability and appropriate human oversight before deployment.",
+      "distractor_feedback": {
+        "Release immediately because the model is confident": "Confidence is not proof of correctness or safety.",
+        "Remove all logs and monitoring": "Removing monitoring prevents detection and accountability.",
+        "Let the model make every decision without appeal": "Unreviewable automated decisions can create serious harm."
+      }
+    },
+    {
+      "id": "m1-w1-q017",
+      "section_id": "M1-W1",
+      "section": "Cloud Computing Fundamentals",
+      "topic": "A workload has predictable demand all year. Does cloud computing automatically make it che",
+      "type": "application",
+      "question": "A workload has predictable demand all year. Does cloud computing automatically make it cheaper than on-premises infrastructure?",
+      "options": [
+        "Yes, because cloud providers do not charge for idle resources",
+        "No. Cloud services are always more expensive",
+        "No. Cost depends on usage, architecture, pricing and operational needs",
+        "Yes. Cloud is always cheaper"
+      ],
+      "correct_answer": "No. Cost depends on usage, architecture, pricing and operational needs",
+      "correct_option_index": 2,
+      "explanation": "Cloud can reduce upfront investment and improve flexibility, but poor sizing, always-on resources, data transfer and service choices can make it costly.",
+      "distractor_feedback": {
+        "Yes, because cloud providers do not charge for idle resources": "Idle or allocated resources may still incur charges.",
+        "No. Cloud services are always more expensive": "Cloud is not always more expensive; the economics depend on the workload and design.",
+        "Yes. Cloud is always cheaper": "Cloud is not automatically cheaper for every workload."
+      }
+    },
+    {
+      "id": "m1-w1-q018",
+      "section_id": "M1-W1",
+      "section": "Cloud Computing Fundamentals",
+      "topic": "Which design choice most directly helps an application remain available if one VM fails",
+      "type": "scenario",
+      "question": "Which design choice most directly helps an application remain available if one VM fails?",
+      "options": [
+        "Run multiple application instances and use a health-aware load balancer",
+        "Put the entire application on one larger VM",
+        "Disable health checks",
+        "Store the only copy of data on the VM's temporary disk"
+      ],
+      "correct_answer": "Run multiple application instances and use a health-aware load balancer",
+      "correct_option_index": 0,
+      "explanation": "Multiple instances behind a health-aware load balancer can route requests away from an unhealthy instance, provided the application is designed for redundancy.",
+      "distractor_feedback": {
+        "Put the entire application on one larger VM": "One larger VM remains a single point of failure.",
+        "Disable health checks": "Health checks help detect unhealthy targets.",
+        "Store the only copy of data on the VM's temporary disk": "Temporary instance storage may not survive instance replacement or failure."
+      }
+    },
+    {
+      "id": "m1-w2-q017",
+      "section_id": "M1-W2",
+      "section": "Linux Fundamentals",
+      "topic": "Which command can show filesystem disk space usage in a human-readable format",
+      "type": "command_or_practical",
+      "question": "Which command can show filesystem disk space usage in a human-readable format?",
+      "options": [
+        "free -h",
+        "ps -h",
+        "df -h",
+        "du -h only"
+      ],
+      "correct_answer": "df -h",
+      "correct_option_index": 2,
+      "explanation": "`df -h` reports filesystem space usage with human-readable units. `du` reports directory/file usage.",
+      "distractor_feedback": {
+        "free -h": "`free -h` reports memory and swap usage.",
+        "ps -h": "`ps` reports processes.",
+        "du -h only": "`du -h` reports usage for files/directories, not overall mounted filesystem capacity."
+      }
+    },
+    {
+      "id": "m1-w2-q018",
+      "section_id": "M1-W2",
+      "section": "Linux Fundamentals",
+      "topic": "A user can read a file but cannot modify it. Which permission is most directly missing on ",
+      "type": "scenario",
+      "question": "A user can read a file but cannot modify it. Which permission is most directly missing on the file for that user?",
+      "options": [
+        "Write (`w`) permission",
+        "Read (`r`) permission",
+        "Execute (`x`) permission only",
+        "The sticky bit"
+      ],
+      "correct_answer": "Write (`w`) permission",
+      "correct_option_index": 0,
+      "explanation": "Writing to a regular file requires write permission on that file, along with any relevant directory permissions.",
+      "distractor_feedback": {
+        "Read (`r`) permission": "The user already has read access.",
+        "Execute (`x`) permission only": "Execute permission controls execution, not modification of ordinary file contents.",
+        "The sticky bit": "The sticky bit affects deletion/renaming behavior in shared directories, not ordinary file write permission."
+      }
+    },
+    {
+      "id": "m1-w3-q017",
+      "section_id": "M1-W3",
+      "section": "Git and Version Control",
+      "topic": "You have edited a tracked file but have not staged it. Which command helps you inspect the",
+      "type": "command_or_practical",
+      "question": "You have edited a tracked file but have not staged it. Which command helps you inspect the unstaged changes?",
+      "options": [
+        "git clone",
+        "git init",
+        "git diff",
+        "git push"
+      ],
+      "correct_answer": "git diff",
+      "correct_option_index": 2,
+      "explanation": "`git diff` shows changes in the working tree that are not staged by default.",
+      "distractor_feedback": {
+        "git clone": "`git clone` copies a repository.",
+        "git init": "`git init` initializes a repository.",
+        "git push": "`git push` publishes commits."
+      }
+    },
+    {
+      "id": "m1-w3-q018",
+      "section_id": "M1-W3",
+      "section": "Git and Version Control",
+      "topic": "A teammate pushed a new branch to the remote. Which command can update your remote-trackin",
+      "type": "scenario",
+      "question": "A teammate pushed a new branch to the remote. Which command can update your remote-tracking references before you inspect it?",
+      "options": [
+        "git fetch",
+        "git commit",
+        "git rm",
+        "git config --global"
+      ],
+      "correct_answer": "git fetch",
+      "correct_option_index": 0,
+      "explanation": "`git fetch` downloads updates and refreshes remote-tracking references without automatically integrating them into the current branch.",
+      "distractor_feedback": {
+        "git commit": "`git commit` records local staged changes.",
+        "git rm": "`git rm` removes files from the working tree and index.",
+        "git config --global": "`git config --global` changes Git configuration."
+      }
+    },
+    {
+      "id": "m1-w4-q017",
+      "section_id": "M1-W4",
+      "section": "Bash Scripting, Automation and Cron",
+      "topic": "A script must stop if a required configuration variable is unset. Which Bash option helps ",
+      "type": "command_or_practical",
+      "question": "A script must stop if a required configuration variable is unset. Which Bash option helps catch that condition?",
+      "options": [
+        "set +u",
+        "set -o noclobber",
+        "set -u",
+        "set -x"
+      ],
+      "correct_answer": "set -u",
+      "correct_option_index": 2,
+      "explanation": "`set -u` treats expansion of unset variables as an error, helping catch missing configuration.",
+      "distractor_feedback": {
+        "set +u": "`set +u` disables nounset behavior.",
+        "set -o noclobber": "`noclobber` affects overwriting files with redirection.",
+        "set -x": "`set -x` traces commands."
+      }
+    },
+    {
+      "id": "m1-w4-q018",
+      "section_id": "M1-W4",
+      "section": "Bash Scripting, Automation and Cron",
+      "topic": "A cron entry is `30 2 * * 1`. In standard five-field cron syntax, when does it run",
+      "type": "application",
+      "question": "A cron entry is `30 2 * * 1`. In standard five-field cron syntax, when does it run?",
+      "options": [
+        "At 02:30 every Monday",
+        "Every 30 minutes on Monday",
+        "At 02:30 every day",
+        "At 01:30 every Tuesday"
+      ],
+      "correct_answer": "At 02:30 every Monday",
+      "correct_option_index": 0,
+      "explanation": "The fields are minute, hour, day of month, month and day of week: minute 30, hour 2, every date/month, weekday 1 (Monday in common cron implementations).",
+      "distractor_feedback": {
+        "Every 30 minutes on Monday": "The first field is a minute value, not an interval.",
+        "At 02:30 every day": "The day-of-week field restricts it to Monday.",
+        "At 01:30 every Tuesday": "The expression specifies 02:30 on weekday 1, not Tuesday."
+      }
+    },
+    {
+      "id": "m2-w1-q017",
+      "section_id": "M2-W1",
+      "section": "Core Compute and IAM",
+      "topic": "A developer needs to administer a VM for a short task. What is safer than sharing a perman",
+      "type": "scenario",
+      "question": "A developer needs to administer a VM for a short task. What is safer than sharing a permanent administrator key?",
+      "options": [
+        "Create one permanent admin key for the whole team",
+        "Disable audit logging",
+        "Give the developer an individual identity with narrowly scoped, time-limited access",
+        "Share the root account password"
+      ],
+      "correct_answer": "Give the developer an individual identity with narrowly scoped, time-limited access",
+      "correct_option_index": 2,
+      "explanation": "Individual identities and scoped, temporary access improve accountability and reduce the impact of credential compromise.",
+      "distractor_feedback": {
+        "Create one permanent admin key for the whole team": "A shared permanent administrator key is over-privileged and difficult to audit.",
+        "Disable audit logging": "Audit logging is important for accountability and investigation.",
+        "Share the root account password": "Shared root credentials remove accountability and greatly increase risk."
+      }
+    },
+    {
+      "id": "m2-w1-q018",
+      "section_id": "M2-W1",
+      "section": "Core Compute and IAM",
+      "topic": "A workload needs to read from one object-storage bucket. Where should its permissions norm",
+      "type": "application",
+      "question": "A workload needs to read from one object-storage bucket. Where should its permissions normally be attached?",
+      "options": [
+        "To the workload's IAM role or service identity",
+        "To every human user in the account",
+        "To the public subnet's route table",
+        "To the VM's display name"
+      ],
+      "correct_answer": "To the workload's IAM role or service identity",
+      "correct_option_index": 0,
+      "explanation": "Workload permissions should be granted to the identity the workload uses, with scope limited to the required bucket actions.",
+      "distractor_feedback": {
+        "To every human user in the account": "Human users do not need the workload's permissions by default.",
+        "To the public subnet's route table": "Route tables control network paths, not object permissions.",
+        "To the VM's display name": "Display names do not grant permissions."
+      }
+    },
+    {
+      "id": "m2-w2-q017",
+      "section_id": "M2-W2",
+      "section": "Cloud Networking, VPCs and Security",
+      "topic": "A private VM must download operating-system updates but should not accept unsolicited inbo",
+      "type": "scenario",
+      "question": "A private VM must download operating-system updates but should not accept unsolicited inbound internet connections. What is a common solution?",
+      "options": [
+        "Remove its route table",
+        "Open SSH to every IP address",
+        "Provide controlled outbound access through a NAT Gateway or suitable service endpoints",
+        "Assign it a public IP and allow all inbound traffic"
+      ],
+      "correct_answer": "Provide controlled outbound access through a NAT Gateway or suitable service endpoints",
+      "correct_option_index": 2,
+      "explanation": "NAT supports outbound internet access for private resources; service endpoints may provide private access to supported cloud services.",
+      "distractor_feedback": {
+        "Remove its route table": "A route table is needed to direct traffic.",
+        "Open SSH to every IP address": "Opening SSH globally is not required for updates and is unsafe.",
+        "Assign it a public IP and allow all inbound traffic": "Public addressing plus open inbound rules increases exposure."
+      }
+    },
+    {
+      "id": "m2-w2-q018",
+      "section_id": "M2-W2",
+      "section": "Cloud Networking, VPCs and Security",
+      "topic": "A security group allows inbound SSH from the bastion's security group, but SSH still fails",
+      "type": "scenario",
+      "question": "A security group allows inbound SSH from the bastion's security group, but SSH still fails. What else should be verified?",
+      "options": [
+        "Network routes, NACL rules, SSH daemon status, host firewall and the correct private IP/key",
+        "Only the website's CSS file",
+        "The number of Git branches",
+        "The VM's cloud-console theme"
+      ],
+      "correct_answer": "Network routes, NACL rules, SSH daemon status, host firewall and the correct private IP/key",
+      "correct_option_index": 0,
+      "explanation": "Security groups are only one layer. Routing, stateless NACL return rules, host-level firewall, SSH service and credentials can also block access.",
+      "distractor_feedback": {
+        "Only the website's CSS file": "CSS does not affect SSH connectivity.",
+        "The number of Git branches": "Git branches do not affect network access.",
+        "The VM's cloud-console theme": "Console appearance is irrelevant."
+      }
+    },
+    {
+      "id": "m2-w3-q017",
+      "section_id": "M2-W3",
+      "section": "Databases, Serverless and Application Services",
+      "topic": "An application needs to retrieve a customer's order by a unique order ID. Which database d",
+      "type": "application",
+      "question": "An application needs to retrieve a customer's order by a unique order ID. Which database design feature is especially useful?",
+      "options": [
+        "A cron job for every query",
+        "A Git branch per customer",
+        "A primary key or indexed unique identifier on the order record",
+        "A public IP address for every row"
+      ],
+      "correct_answer": "A primary key or indexed unique identifier on the order record",
+      "correct_option_index": 2,
+      "explanation": "A primary key or suitable index supports efficient identification and retrieval of a specific record.",
+      "distractor_feedback": {
+        "A cron job for every query": "Cron schedules tasks and is not used for each query.",
+        "A Git branch per customer": "Git branches are unrelated to application data retrieval.",
+        "A public IP address for every row": "IP addresses are network identifiers, not row lookup design."
+      }
+    },
+    {
+      "id": "m2-w3-q018",
+      "section_id": "M2-W3",
+      "section": "Databases, Serverless and Application Services",
+      "topic": "A serverless function is timing out while processing a very large file. What is a sensible",
+      "type": "scenario",
+      "question": "A serverless function is timing out while processing a very large file. What is a sensible engineering response?",
+      "options": [
+        "Inspect execution limits and logs, then consider chunking, streaming or a workflow designed for long-running work",
+        "Increase the function's timeout without checking anything else",
+        "Assume serverless functions can run forever",
+        "Delete the source file after the first failed attempt"
+      ],
+      "correct_answer": "Inspect execution limits and logs, then consider chunking, streaming or a workflow designed for long-running work",
+      "correct_option_index": 0,
+      "explanation": "Function runtimes have limits. Diagnose logs and resource constraints, then redesign processing if the job exceeds the service's intended execution model.",
+      "distractor_feedback": {
+        "Increase the function's timeout without checking anything else": "Increasing timeout may help only within platform limits and does not solve memory or architecture problems.",
+        "Assume serverless functions can run forever": "Serverless functions have execution and resource limits.",
+        "Delete the source file after the first failed attempt": "Deleting source data after failure risks data loss."
+      }
+    },
+    {
+      "id": "m2-w4-q017",
+      "section_id": "M2-W4",
+      "section": "Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "A model's predictions become less accurate after customer behavior changes significantly. ",
+      "type": "scenario",
+      "question": "A model's predictions become less accurate after customer behavior changes significantly. What should the team investigate?",
+      "options": [
+        "A GitHub repository's star count",
+        "The cloud region's display name",
+        "Data or concept drift and whether the model needs evaluation or retraining",
+        "A Linux file permission issue only"
+      ],
+      "correct_answer": "Data or concept drift and whether the model needs evaluation or retraining",
+      "correct_option_index": 2,
+      "explanation": "Changing input patterns or relationships can cause model drift; teams should evaluate performance and determine whether retraining or other changes are needed.",
+      "distractor_feedback": {
+        "A GitHub repository's star count": "Repository popularity is unrelated to model quality.",
+        "The cloud region's display name": "A region display name does not explain model drift.",
+        "A Linux file permission issue only": "File permissions are not the likely explanation for changing predictive accuracy."
+      }
+    },
+    {
+      "id": "m2-w4-q018",
+      "section_id": "M2-W4",
+      "section": "Cloud AI, Generative AI, MLOps and Responsible AI",
+      "topic": "A generative AI assistant is used to summarize confidential customer records. What is a ke",
+      "type": "application",
+      "question": "A generative AI assistant is used to summarize confidential customer records. What is a key responsible-use requirement?",
+      "options": [
+        "Apply access controls and privacy safeguards, and ensure data handling complies with relevant policy and law",
+        "Send all records to any public AI service without review",
+        "Disable authentication to simplify access",
+        "Assume model outputs cannot expose sensitive information"
+      ],
+      "correct_answer": "Apply access controls and privacy safeguards, and ensure data handling complies with relevant policy and law",
+      "correct_option_index": 0,
+      "explanation": "Sensitive data requires appropriate access control, data minimization and review of the service's data-handling terms and applicable obligations.",
+      "distractor_feedback": {
+        "Send all records to any public AI service without review": "Unreviewed disclosure can expose confidential information.",
+        "Disable authentication to simplify access": "Authentication is a core safeguard.",
+        "Assume model outputs cannot expose sensitive information": "AI systems and prompts/outputs can create privacy risks; they should not be assumed harmless."
+      }
+    }
+  ]
+}

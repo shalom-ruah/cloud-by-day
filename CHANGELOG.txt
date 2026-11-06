@@ -1,0 +1,8 @@
+CLOUD BY DAY — VERSION 2
+
+- Added multi-section quiz selection, including Select all and Clear.
+- Quiz questions are drawn randomly from the combined selected sections.
+- Each question identifies its course section.
+- Added a persistent Light mode / Dark mode toggle.
+- Increased text sizes and improved text contrast.
+- Preserved the existing 144-question bank, scoring, explanations, review and local progress.

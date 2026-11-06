@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cloud by Day — a practical cloud engineering revision space for beginners.">
+  <title>Cloud by Day | Cloud Engineering Revision</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Cloud by Day home"><span class="brand-mark">C</span><span>cloud<span class="brand-light">by day</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#revision">Question bank</a>
+      <a class="nav-link" href="#progress">My progress</a>
+    </nav>
+    <div class="header-actions"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"><span class="theme-icon" aria-hidden="true">☾</span><span id="theme-label">Dark mode</span></button><a class="header-cta" href="#revision">Start revising <span aria-hidden="true">↗</span></a></div>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR CLOUD ENGINEERING REVISION SPACE</div>
+        <h1>Learn the concepts.<br><span>Test your understanding.</span></h1>
+        <p class="hero-description">A focused question bank for building a stronger foundation in cloud engineering — one topic, one question, one discovery at a time.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#revision">Explore the question bank <span>→</span></a><a class="text-link" href="#how-it-works">How it works <span>↓</span></a></div>
+        <div class="hero-note"><span class="note-icon">✦</span> Built around the eight sections of the Cloud Engineering course.</div>
+      </div>
+      <div class="hero-visual" aria-label="Cloud engineering learning illustration">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="visual-core"><span class="cloud-symbol">☁</span><strong>Keep<br>building.</strong><small>ONE STEP AT A TIME</small></div>
+        <div class="float-card float-top"><span class="float-icon purple">⌘</span><span><b>Practice</b><small>Learn as you go</small></span></div>
+        <div class="float-card float-bottom"><span class="float-icon green">✓</span><span><b>Track progress</b><small>See what sticks</small></span></div>
+        <span class="visual-spark spark-one">✳</span><span class="visual-spark spark-two">✦</span>
+      </div>
+    </section>
+
+    <section class="stats-strip wrap" aria-label="Question bank overview">
+      <div class="stat"><strong id="total-questions">144</strong><span>revision questions</span></div>
+      <div class="stat"><strong>08</strong><span>course sections</span></div>
+      <div class="stat"><strong>04</strong><span>question styles</span></div>
+      <div class="stat stat-last"><strong id="completed-stat">0</strong><span>questions answered here</span></div>
+    </section>
+
+    <section class="section-wrap wrap" id="revision">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE QUESTION BANK</div><h2>Build your revision mix.</h2><p>Choose one section or combine several, set your pace, and get to work.</p></div>
+        <div class="bank-count"><span class="count-dot"></span><span id="bank-status">Loading question bank…</span></div>
+      </div>
+      <div class="revision-layout">
+        <div class="section-picker"><div class="section-picker-actions"><span class="picker-label">SELECT YOUR SECTIONS</span><div><button type="button" class="picker-action" id="select-all-sections">Select all</button><button type="button" class="picker-action" id="clear-sections">Clear</button></div></div><p class="selection-summary" id="selection-summary">1 section selected</p><div class="section-list" id="section-list" aria-label="Course sections">
+          <div class="loading-card">Loading your course sections…</div>
+        </div></div>
+        <aside class="setup-panel">
+          <div class="setup-top"><span class="setup-kicker">YOUR SESSION</span><span class="setup-spark">✳</span></div>
+          <h3>Set your<br>revision pace.</h3>
+          <label class="field-label" for="quiz-mode">How do you want to practise?</label>
+          <select id="quiz-mode" class="select-field"><option value="practice">Practice mode</option><option value="test">Test mode</option></select>
+          <p class="field-help" id="mode-help">Get instant feedback and explanations after each answer.</p>
+          <label class="field-label" for="question-count">Number of questions</label>
+          <div class="count-control"><button type="button" id="count-minus" aria-label="Decrease question count">−</button><input id="question-count" type="number" min="1" max="18" value="10" inputmode="numeric"><button type="button" id="count-plus" aria-label="Increase question count">+</button></div>
+          <p class="field-help" id="count-help">Choose how many questions to draw from your selected sections.</p>
+          <button class="button button-primary button-full" id="start-quiz" type="button" disabled>Start revision <span>→</span></button>
+          <p class="setup-footnote"><span>↗</span> Your progress is saved in this browser.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-it-works"><div class="wrap how-inner">
+      <div class="section-heading compact-heading"><div><div class="eyebrow">A SIMPLE WAY TO REVISE</div><h2>Make every question count.</h2></div></div>
+      <div class="how-grid">
+        <article class="how-card"><span class="how-number">01</span><div class="how-icon">▤</div><h3>Choose your sections</h3><p>Focus on one week, combine topics, or select the full course.</p></article>
+        <article class="how-card"><span class="how-number">02</span><div class="how-icon">⌁</div><h3>Set your pace</h3><p>Choose your question count and switch between Practice and Test mode. Questions are shuffled for each session.</p></article>
+        <article class="how-card"><span class="how-number">03</span><div class="how-icon">↗</div><h3>Review and improve</h3><p>Learn from explanations, revisit mistakes and keep an eye on your progress.</p></article>
+      </div>
+    </div></section>
+
+    <section class="progress-section wrap" id="progress">
+      <div class="section-heading"><div><div class="eyebrow">YOUR LEARNING ACTIVITY</div><h2>Progress, not perfection.</h2><p>Your activity is stored locally in this browser on this device.</p></div><button class="reset-button" id="reset-progress" type="button">Reset progress</button></div>
+      <div class="progress-overview">
+        <div class="progress-metric"><span class="metric-label">Questions answered</span><strong id="progress-answered">0</strong><small>Across all sections</small></div>
+        <div class="progress-metric"><span class="metric-label">Overall accuracy</span><strong id="progress-accuracy">—</strong><small>Correct answers / attempted</small></div>
+        <div class="progress-metric"><span class="metric-label">Sessions completed</span><strong id="progress-sessions">0</strong><small>Practice and test sessions</small></div>
+      </div>
+      <div class="topic-progress" id="topic-progress"><div class="empty-progress">Your section progress will appear here after you complete a session.</div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark">C</span><span>cloud<span class="brand-light">by day</span></span></a><p>Learning in public. Building one discovery at a time.</p><span class="footer-copy">© <span id="current-year">2026</span> Cloud by Day</span></div></footer>
+
+  <div class="quiz-overlay" id="quiz-overlay" hidden>
+    <section class="quiz-shell" role="dialog" aria-modal="true" aria-labelledby="quiz-title">
+      <header class="quiz-header"><a class="brand" href="#home"><span class="brand-mark">C</span><span>cloud<span class="brand-light">by day</span></span></a><button class="icon-button" id="close-quiz" type="button" aria-label="Exit quiz">✕</button></header>
+      <div id="quiz-stage" class="quiz-stage"></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
